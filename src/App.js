@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { useEffect } from "react";
 import  { Toaster } from "react-hot-toast";
+import { NavPath } from "./common/nevigation/NavPath";
 
 function App() {
   console.log = () => {};
@@ -30,8 +31,9 @@ function App() {
         <Route exact path="/productdetail/:id" element={<ProductDetail />} />
         <Route exact path="/product" element={<Product />} />
         <Route exact path="/about" element={<AboutUs />} />
-        <Route exact path="/contact" element={<ContectUs />} />
+        <Route exact path={NavPath.ContactRoute} element={<ContectUs />} />
         <Route exact path="/formspark" element={<FormSpark />} />
+        <Route exact path={NavPath.NotFound} element={<ErrorPage />} />
         <Route exact path="/*" element={<ErrorPage />} />
       </Routes>
       <Footer />
