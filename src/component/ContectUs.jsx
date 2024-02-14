@@ -2,11 +2,13 @@ import React, { Fragment, useRef } from "react";
 import toast from "react-hot-toast";
 import emailjs from "@emailjs/browser";
 import { NavLink } from "react-router-dom";
+import NProgress from "nprogress";
 
 const ContectUs = () => {
   const formRef = useRef();
 
   async function handleFormSubmit(e) {
+      NProgress.start();
     e.preventDefault();
     emailjs.init(process.env.REACT_APP_EMAILJS_USER_ID);
     //const formData = new FormData(formRef.current);
@@ -26,7 +28,8 @@ const ContectUs = () => {
         (err) => {
           toast.error("Failed to send the message, please try again");
         }
-      );
+    );
+     NProgress.done();
   }
 
   return (
@@ -150,8 +153,9 @@ const ContectUs = () => {
                       <input
                         type="hidden"
                         name="to_name"
-                        value={"paratpar industries"}
+                        value={"paratpar industries contact form"}
                       />
+                      <input type="hidden" name="phone" value={"--"} />
                       <input
                         type="text"
                         className="form-control border-0 bg-light px-4"

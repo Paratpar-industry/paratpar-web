@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react'
-import { NavLink } from 'react-router-dom';
+import React, { Fragment } from "react";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -20,17 +20,48 @@ const Footer = () => {
                   <div className="d-flex mb-2">
                     <i className="bi bi-geo-alt text-primary me-2" />
                     <p className="mb-0">
-                      Ketan Estate, Plot no 28, Behind Godown Zone, Dared,
-                      Jamnagar, Jamnagar, Gujarat, 361004
+                      <a
+                        href="https://maps.app.goo.gl/FkqPKfuf3gCJUYLP6"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: "white" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#06A3DA")}
+                        onMouseLeave={(e) => (e.target.style.color = "white")}
+                      >
+                        <address>
+                          Ketan Estate, Plot no 28, Behind Godown Zone, Dared,
+                          Jamnagar,
+                        </address>
+                      </a>
                     </p>
                   </div>
                   <div className="d-flex mb-2">
                     <i className="bi bi-envelope-open text-primary me-2" />
-                    <p className="mb-0">Paratparindustry28@gmail.com</p>
+                    <p className="mb-0">
+                      {" "}
+                      <a
+                        href="mailto:Paratparindustry28@gmail.com"
+                        style={{ color: "white" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#06A3DA")}
+                        onMouseLeave={(e) => (e.target.style.color = "white")}
+                        // className="text-primary mb-0"
+                      >
+                        Paratparindustry28@gmail.com
+                      </a>
+                    </p>
                   </div>
                   <div className="d-flex mb-2">
                     <i className="bi bi-telephone text-primary me-2" />
-                    <p className="mb-0">+91 9586176608</p>
+                    <p className="mb-0">
+                      <a
+                        href="tel:+919586176608"
+                        style={{ color: "white" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#06A3DA")}
+                        onMouseLeave={(e) => (e.target.style.color = "white")}
+                      >
+                        +91 9586176608
+                      </a>
+                    </p>
                   </div>
                   {false && (
                     <div className="d-flex mt-4">
@@ -67,7 +98,7 @@ const Footer = () => {
                       <i className="bi bi-arrow-right text-primary me-2" />
                       Product
                     </a>
-                    <a className="text-light" href="/contect">
+                    <a className="text-light" href="/contact">
                       <i className="bi bi-arrow-right text-primary me-2" />
                       Contact Us
                     </a>
@@ -137,6 +168,6 @@ const Footer = () => {
       {/* Footer End */}
     </Fragment>
   );
-}
+};
 
-export default Footer
+export default Footer;

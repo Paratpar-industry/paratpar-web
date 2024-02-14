@@ -1,5 +1,6 @@
-import React, { Fragment } from 'react'
-import { NavLink } from 'react-router-dom';
+/* eslint-disable jsx-a11y/img-redundant-alt */
+import React, { Fragment } from "react";
+import { NavLink } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -32,34 +33,37 @@ const AboutUs = () => {
                   About Us
                 </h5>
                 <h1 className="mb-0">
-                  The Best industries Solution With 10 Years of Experience
+                  Providing High-Quality Brass Products with Precision
+                  Engineering
                 </h1>
               </div>
               <p className="mb-4">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum et
-                tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum
-                et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo
-                justo et tempor eirmod magna dolore erat amet
+                At Paratpar Industries, we specialize in manufacturing
+                top-quality brass products using state-of-the-art technology and
+                precision engineering techniques. With over a decade of
+                experience in the industry, we have established ourselves as a
+                trusted name in delivering excellence and innovation in every
+                product we create.
               </p>
               <div className="row g-0 mb-3">
                 <div className="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
                   <h5 className="mb-3">
                     <i className="fa fa-check text-primary me-3" />
-                    Award Winning
+                    Award-Winning Solutions
                   </h5>
                   <h5 className="mb-3">
                     <i className="fa fa-check text-primary me-3" />
-                    Professional Staff
+                    Highly Skilled Team
                   </h5>
                 </div>
                 <div className="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
                   <h5 className="mb-3">
                     <i className="fa fa-check text-primary me-3" />
-                    24/7 Support
+                    Round-the-Clock Support
                   </h5>
                   <h5 className="mb-3">
                     <i className="fa fa-check text-primary me-3" />
-                    Fair Prices
+                    Competitive Prices
                   </h5>
                 </div>
               </div>
@@ -74,17 +78,20 @@ const AboutUs = () => {
                   <i className="fa fa-phone-alt text-white" />
                 </div>
                 <div className="ps-4">
-                  <h5 className="mb-2">Call to ask any question</h5>
-                  <h4 className="text-primary mb-0">+91 9586176608</h4>
+                  <h5 className="mb-2">Have a question?</h5>
+                  <h4 className="text-primary mb-0">
+                    <a
+                      href="tel:+919586176608"
+                      style={{ color: "#06A3DA" }}
+                      onMouseEnter={(e) => (e.target.style.color = "#06A3DA")}
+                      onMouseLeave={(e) => (e.target.style.color = "#06A3DA")}
+                    >
+                      {" "}
+                      Call us at +91 9586176608
+                    </a>
+                  </h4>
                 </div>
               </div>
-              <a
-                href="quote.html"
-                className="btn btn-primary py-3 px-5 mt-3 wow zoomIn"
-                data-wow-delay="0.9s"
-              >
-                Request A Quote
-              </a>
             </div>
             <div className="col-lg-5" style={{ minHeight: 500 }}>
               <div className="position-relative h-100">
@@ -93,13 +100,14 @@ const AboutUs = () => {
                   data-wow-delay="0.9s"
                   src="img/about.jpg"
                   style={{ objectFit: "cover" }}
-                  alt=""
+                  alt="About Us Image"
                 />
               </div>
             </div>
           </div>
         </div>
       </div>
+
       {/* About End */}
       {/* Team Start */}
       <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -251,6 +259,6 @@ const AboutUs = () => {
       {/* Team End */}
     </Fragment>
   );
-}
+};
 
-export default AboutUs
+export default AboutUs;
