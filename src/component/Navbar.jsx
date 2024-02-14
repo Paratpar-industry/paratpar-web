@@ -1,6 +1,12 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useNavigate,
+  useLocation,
+} from "react-router-dom";
 const Navbar = () => {
   //   const [showNav, setShowNav] = useState(false);
   //   const [activeDropdown, setActiveDropdown] = useState(false);
@@ -8,6 +14,15 @@ const Navbar = () => {
   //   function navToggle() {
   // setActiveDropdown(!activeDropdown);
   //   }
+  const nav = useNavigate();
+  const location = useLocation();
+  console.log = () => {};
+  console.error = () => {};
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+    nav(location.pathname);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <Fragment>
@@ -102,7 +117,6 @@ const Navbar = () => {
             </button> */}
           </div>
         </nav>
-       
       </div>
       {/* Navbar & Carousel End */}
     </Fragment>
