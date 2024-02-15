@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+.initials-avatar {
+  width:  60px;
+  height:  60px;
+  background-color: #ccc;
+  border-radius:  50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size:  24px;
+  color: #317dc9;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* Color of the scrollbar handle */
+  border-radius: 4px; /* Rounded corners of the scrollbar handle */
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1); /* Color of the scrollbar track */
+}
+
+
