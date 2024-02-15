@@ -7,6 +7,7 @@ import {
   useNavigate,
   useLocation,
 } from "react-router-dom";
+import { NavPath } from "../common/nevigation/NavPath";
 const Navbar = () => {
   //   const [showNav, setShowNav] = useState(false);
   //   const [activeDropdown, setActiveDropdown] = useState(false);
@@ -16,6 +17,14 @@ const Navbar = () => {
   //   }
   const nav = useNavigate();
   const location = useLocation();
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+  const closeDropdown = () => {
+    setIsDropdownOpen(false);
+  };
   console.log = () => {};
   console.error = () => {};
   useEffect(() => {
@@ -29,9 +38,9 @@ const Navbar = () => {
       {/* Navbar & Carousel Start */}
       <div className="container-fluid position-relative p-0">
         <nav className="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-          <NavLink href="/" className="navbar-brand p-0">
+          <NavLink to="/" className="navbar-brand p-0">
             <h1 className="m-0">
-              <i className="fa fa-user-tie me-2" />
+              {/* <i className="fa fa-user-tie me-2" /> */}
               Paratpar
             </h1>
           </NavLink>
@@ -41,68 +50,56 @@ const Navbar = () => {
             data-bs-toggle="collapse"
             data-bs-target="#navbarCollapse"
           >
+            {/*   data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded={isDropdownOpen ? "true" : "false"}
+            aria-label="Toggle navigation"
+            onClick={toggleDropdown} */}
             <span className="fa fa-bars" />
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto py-0">
-              <NavLink to="/" className="nav-item nav-link">
+              <NavLink to={NavPath.HomeRoute} className="nav-item nav-link">
                 Home
               </NavLink>
-              <NavLink to="/about" className="nav-item nav-link">
+              <NavLink to={NavPath.AboutRoute} className="nav-item nav-link">
                 About
               </NavLink>
 
-              <div className="nav-item dropdown">
+              <div
+                className={`nav-item dropdown ${isDropdownOpen ? "show" : ""}`}
+                onBlur={closeDropdown}
+                onMouseEnter={toggleDropdown}
+                onMouseLeave={closeDropdown}
+              >
                 <NavLink
-                  to="/product"
+                  to={NavPath.ProductRoute}
                   className="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
+                  onClick={toggleDropdown}
                 >
                   Product
                 </NavLink>
-                <div className="dropdown-menu m-0">
-                  <NavLink href="/" className="dropdown-item">
-                    automotive parts
-                  </NavLink>
-
-                  <NavLink href="/" className="dropdown-item">
-                    cable glands
-                  </NavLink>
-
-                  <NavLink href="/" className="dropdown-item">
-                    earthing &amp; lightening
-                  </NavLink>
-
-                  <NavLink href="/" className="dropdown-item">
-                    fasteners
-                  </NavLink>
-
-                  <NavLink href="/" className="dropdown-item">
-                    hydraulic &amp; pneumatic fittings
-                  </NavLink>
-
-                  <NavLink href="/" className="dropdown-item">
-                    measuring Instruments &amp; sensors
-                  </NavLink>
-
-                  <NavLink href="/" className="dropdown-item">
-                    moulding inserts
-                  </NavLink>
-
-                  <NavLink href="/" className="dropdown-item">
-                    neutral bar &amp; blocks
-                  </NavLink>
-
-                  <NavLink href="/" className="dropdown-item">
-                    oil &amp; gas
-                  </NavLink>
-
-                  <NavLink href="/" className="dropdown-item">
-                    sanitary &amp; plumbing fittings
-                  </NavLink>
+                <div
+                  className={`dropdown-menu m-0 ${
+                    isDropdownOpen ? "show" : ""
+                  }`}
+                >
+                  {Object.entries(NavPath.getProductNames()).map(
+                    ([key, value]) => (
+                      <NavLink
+                        key={key}
+                        to={NavPath.ProducDetailtRoute(value.value)} // Using ProductDetailRoute method to generate dynamic route
+                        className="dropdown-item"
+                        onClick={toggleDropdown} // Close dropdown when an item is clicked
+                      >
+                        {value.name}
+                      </NavLink>
+                    )
+                  )}
                 </div>
               </div>
-              <NavLink to="/contact" className="nav-item nav-link">
+              <NavLink to={NavPath.ContactRoute} className="nav-item nav-link">
                 Contact
               </NavLink>
             </div>

@@ -28,7 +28,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/productdetail/:id" element={<ProductDetail />} />
+        <Route exact path="/product/:id" element={<ProductDetail />} />
         <Route exact path="/product" element={<Product />} />
         <Route exact path="/about" element={<AboutUs />} />
         <Route exact path={NavPath.ContactRoute} element={<ContectUs />} />

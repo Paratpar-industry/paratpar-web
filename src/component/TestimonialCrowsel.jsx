@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -11,21 +12,20 @@ function TestimonialCarousel() {
   // Define your testimonial items here
   const testimonialItems = [
     {
-      image: "img/testimonial-1.jpg",
-      clientName: "Client Name",
+      image: "img/brass-company.jpg",
+      clientName: "Vinod Industries",
       profession: "Profession",
       text: "Choosing paratpar for our brass parts was a game-changer. Their parts are not only durable but also come with excellent customer support. Highly recommended!",
     },
     {
-      image: "img/testimonial-1.jpg",
-      clientName: "Client Name",
+      image: "img/brass-company.jpg",
+      clientName: "Ashar Enterprise",
       profession: "Profession",
       text: "We've had nothing but positive experiences with paratpar. Their brass parts are of high quality and meet our exact specifications. A must-have for any industrial project!",
     },
     {
-      image: "img/testimonial-1.jpg",
-      clientName: "Client Name",
-      profession: "Profession",
+      image: "img/brass-company.jpg",
+      clientName: "Precision Sintered Products",
       text: "Thanks to paratpar, we were able to complete our project on time and within budget. Their brass parts are reliable and made our job easier. Excellent service!",
     },
     // ... other testimonial items

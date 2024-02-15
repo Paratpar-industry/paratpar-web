@@ -1,7 +1,25 @@
 import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 
+const quickLinks = [
+  { text: "Home", path: "/" },
+  { text: "About Us", path: "/about" },
+  { text: "Product", path: "/product" },
+  { text: "Contact Us", path: "/contact" },
+];
+
+const popularLinks = [
+  { text: "Home", path: "/" },
+  { text: "About Us", path: "/about" },
+  { text: "Product", path: "/product" },
+  { text: "Contact Us", path: "/contact" },
+];
+
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <Fragment>
       {/* Footer Start */}
@@ -65,18 +83,27 @@ const Footer = () => {
                   </div>
                   {false && (
                     <div className="d-flex mt-4">
-                      <a className="btn btn-primary btn-square me-2" href="/">
+                      <NavLink
+                        className="btn btn-primary btn-square me-2"
+                        href="/"
+                      >
                         <i className="fab fa-twitter fw-normal" />
-                      </a>
-                      <a className="btn btn-primary btn-square me-2" href="/">
+                      </NavLink>
+                      <NavLink
+                        className="btn btn-primary btn-square me-2"
+                        href="/"
+                      >
                         <i className="fab fa-facebook-f fw-normal" />
-                      </a>
-                      <a className="btn btn-primary btn-square me-2" href="/">
+                      </NavLink>
+                      <NavLink
+                        className="btn btn-primary btn-square me-2"
+                        href="/"
+                      >
                         <i className="fab fa-linkedin-in fw-normal" />
-                      </a>
-                      <a className="btn btn-primary btn-square" href="/">
+                      </NavLink>
+                      <NavLink className="btn btn-primary btn-square" href="/">
                         <i className="fab fa-instagram fw-normal" />
-                      </a>
+                      </NavLink>
                     </div>
                   )}
                 </div>
@@ -85,23 +112,17 @@ const Footer = () => {
                     <h3 className="text-light mb-0">Quick Links</h3>
                   </div>
                   <div className="link-animated d-flex flex-column justify-content-start">
-                    <a className="text-light mb-2" href="/">
-                      <i className="bi bi-arrow-right text-primary me-2" />
-                      Home
-                    </a>
-                    <a className="text-light mb-2" href="/about">
-                      <i className="bi bi-arrow-right text-primary me-2" />
-                      About Us
-                    </a>
-
-                    <a className="text-light mb-2" href="/product">
-                      <i className="bi bi-arrow-right text-primary me-2" />
-                      Product
-                    </a>
-                    <a className="text-light" href="/contact">
-                      <i className="bi bi-arrow-right text-primary me-2" />
-                      Contact Us
-                    </a>
+                    {quickLinks.map((link, index) => (
+                      <NavLink
+                        key={index}
+                        className="text-light mb-2"
+                        to={link.path}
+                        onClick={scrollToTop} // Scroll to top when clicking on a link
+                      >
+                        <i className="bi bi-arrow-right text-primary me-2" />
+                        {link.text}
+                      </NavLink>
+                    ))}
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
@@ -109,23 +130,17 @@ const Footer = () => {
                     <h3 className="text-light mb-0">Popular Links</h3>
                   </div>
                   <div className="link-animated d-flex flex-column justify-content-start">
-                    <a className="text-light mb-2" href="/">
-                      <i className="bi bi-arrow-right text-primary me-2" />
-                      Home
-                    </a>
-                    <a className="text-light mb-2" href="/about">
-                      <i className="bi bi-arrow-right text-primary me-2" />
-                      About Us
-                    </a>
-
-                    <a className="text-light mb-2" href="/product">
-                      <i className="bi bi-arrow-right text-primary me-2" />
-                      Product
-                    </a>
-                    <a className="text-light" href="/contect">
-                      <i className="bi bi-arrow-right text-primary me-2" />
-                      Contact Us
-                    </a>
+                    {popularLinks.map((link, index) => (
+                      <NavLink
+                        key={index}
+                        className="text-light mb-2"
+                        to={link.path}
+                        onClick={scrollToTop} // Scroll to top when clicking on a link
+                      >
+                        <i className="bi bi-arrow-right text-primary me-2" />
+                        {link.text}
+                      </NavLink>
+                    ))}
                   </div>
                 </div>
               </div>

@@ -1,6 +1,9 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
+import Avatar from "react-avatar";
+
+// Inside your render method or functional component body
 
 const AboutUs = () => {
   return (
@@ -23,7 +26,6 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-
       <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div className="container py-5">
           <div className="row g-5">
@@ -107,7 +109,6 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-
       {/* About End */}
       {/* Team Start */}
       <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -127,11 +128,7 @@ const AboutUs = () => {
             <div className="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
               <div className="team-item bg-light rounded overflow-hidden">
                 <div className="team-img position-relative overflow-hidden">
-                  <img
-                    className="img-fluid w-100"
-                    src="img/team-1.jpg"
-                    alt=""
-                  />
+                  <img className="img-fluid w-100" src="/img/rh.png" alt="" />
                   {false && (
                     <div className="team-social">
                       <a
@@ -170,11 +167,9 @@ const AboutUs = () => {
             <div className="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
               <div className="team-item bg-light rounded overflow-hidden">
                 <div className="team-img position-relative overflow-hidden">
-                  <img
-                    className="img-fluid w-100"
-                    src="img/team-1.jpg"
-                    alt=""
-                  />
+                  <img className="img-fluid w-100" src="img/vh.png" alt="" />
+                  {/* <div className="initials-avatar img-fluid w-100">JD</div> */}
+
                   {false && (
                     <div className="team-social">
                       <a
@@ -213,11 +208,7 @@ const AboutUs = () => {
             <div className="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
               <div className="team-item bg-light rounded overflow-hidden">
                 <div className="team-img position-relative overflow-hidden">
-                  <img
-                    className="img-fluid w-100"
-                    src="img/team-1.jpg"
-                    alt=""
-                  />
+                  <img className="img-fluid w-100" src="img/ba.png" alt="" />
                   {false && (
                     <div className="team-social">
                       <a
@@ -256,6 +247,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      {/* <Avatar name="John Doe" size="60" round={true} />; */}
       {/* Team End */}
     </Fragment>
   );
