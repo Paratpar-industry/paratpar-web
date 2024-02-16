@@ -39,7 +39,17 @@ function TestimonialCarousel() {
       nav
       autoplay
       autoplayTimeout={10000}
-      // onChange={handleChange}
+      responsive={{
+        0: {
+          items: 1, // Show one item on small screens
+        },
+        768: {
+          items: 2, // Show two items on tablets
+        },
+        992: {
+          items: 3, // Show three items on medium-sized screens
+        },
+      }}
     >
       {testimonialItems.map((item, index) => (
         <div

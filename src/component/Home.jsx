@@ -552,7 +552,7 @@ const Home = () => {
         {/* Testimonial End */}
 
         {/* Vendor Start */}
-        <div
+       {false && <div
           className="container-fluid py-5 wow fadeInUp"
           data-wow-delay="0.1s"
         >
@@ -571,7 +571,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div>}
       </>
     </Fragment>
   );

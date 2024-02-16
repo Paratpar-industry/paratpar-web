@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
+import { ApplicationShareData } from "../common/config/ApplicationShareData";
 
 const quickLinks = [
   { text: "Home", path: "/" },
@@ -64,7 +65,7 @@ const Footer = () => {
                         onMouseLeave={(e) => (e.target.style.color = "white")}
                         // className="text-primary mb-0"
                       >
-                        Paratparindustry28@gmail.com
+                      {ApplicationShareData.EmailAddress}
                       </a>
                     </p>
                   </div>
@@ -77,7 +78,7 @@ const Footer = () => {
                         onMouseEnter={(e) => (e.target.style.color = "#06A3DA")}
                         onMouseLeave={(e) => (e.target.style.color = "white")}
                       >
-                        +91 9586176608
+                       {ApplicationShareData.ContactNumber}
                       </a>
                     </p>
                   </div>
@@ -167,7 +168,7 @@ const Footer = () => {
                   </NavLink>
                   . All Rights Reserved.
                   {/*/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. *** /*/}
-                  Designed by{" "}
+                
                   <div className="credits">
                     Designed by{" "}
                     <NavLink className="stop" tp="/">
