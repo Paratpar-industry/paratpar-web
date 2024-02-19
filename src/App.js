@@ -12,12 +12,13 @@ import FormSpark from "./component/FormSpark";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { useEffect } from "react";
-import  { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 import { NavPath } from "./common/nevigation/NavPath";
+import Quality from "./component/Quality";
 
 function App() {
-  console.log = () => {};
-  console.error = () => {};
+  // console.log = () => {};
+  // console.error = () => {};
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
@@ -32,7 +33,8 @@ function App() {
         <Route exact path="/product" element={<Product />} />
         <Route exact path="/about" element={<AboutUs />} />
         <Route exact path={NavPath.ContactRoute} element={<ContectUs />} />
-        <Route exact path="/formspark" element={<FormSpark />} />
+        {/* <Route exact path="/formspark" element={<FormSpark />} /> */}
+        <Route exact path={NavPath.Quality} element={<Quality />} />
         <Route exact path={NavPath.NotFound} element={<ErrorPage />} />
         <Route exact path="/*" element={<ErrorPage />} />
       </Routes>

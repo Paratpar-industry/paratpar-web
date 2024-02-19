@@ -94,7 +94,7 @@ const QuoteForm = () => {
             </div>
             <div className="col-lg-5">
               <div
-                className="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn"
+                className="bg-primary rounded h-100 d-flex align-items-center p-4 wow zoomIn"
                 data-wow-delay="0.9s"
               >
                 <form ref={formRef} onSubmit={handleFormSubmit}>

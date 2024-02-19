@@ -2,6 +2,7 @@
 import React, { Fragment } from "react";
 import QuateForm from "../component/QuoteForm";
 import TestimonialCarousel from "./TestimonialCrowsel";
+import { NavLink } from "react-router-dom";
 const Home = () => {
   return (
     <Fragment>
@@ -205,13 +206,13 @@ const Home = () => {
                     >
                       <i className="fa fa-award text-white" />
                     </div>
-                    <h4>Award Winning</h4>
+                    <h4>Quality Excellence and Industry Recognition</h4>
                     <p className="mb-0">
-                      Brasspart Industries has earned numerous awards and
-                      accolades for our dedication to excellence and commitment
-                      to customer satisfaction. Our relentless pursuit of
-                      quality and innovation has positioned us as an industry
-                      leader, earning recognition from both clients and peers
+                      At Brasspart Industries, we pride ourselves on delivering
+                      unparalleled quality and innovation, setting us apart as a
+                      trusted industry leader. you're selecting a partner
+                      renowned for its relentless pursuit of quality and
+                      innovation, earning admiration from clients and peers
                       alike.
                     </p>
                   </div>
@@ -286,98 +287,25 @@ const Home = () => {
               </h1>
             </div>
             <div className="row g-5">
-              <div
-                className="col-lg-4 col-md-6 wow zoomIn"
-                data-wow-delay="0.3s"
-              >
-                <div className="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                  <div className="service-icon">
-                    <i className="fa fa-shield-alt text-white" />
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className={`col-lg-4 col-md-6 wow zoomIn`}
+                  data-wow-delay={service.delay}
+                >
+                  <div className="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div className="service-icon">
+                      <i className={service.icon} />
+                    </div>
+                    <h4 className="mb-3">{service.title}</h4>
+                    <p className="m-0">{service.description}</p>
+                    <NavLink className="btn btn-lg btn-primary rounded" to="#">
+                      <i className="bi bi-arrow-right" />
+                    </NavLink>
                   </div>
-                  <h4 className="mb-3">Brass Components</h4>
-                  <p className="m-0">
-                    We offer a wide range of high-quality brass components
-                    tailored to meet your specific requirements.
-                  </p>
-                  <a className="btn btn-lg btn-primary rounded" href="/">
-                    <i className="bi bi-arrow-right" />
-                  </a>
                 </div>
-              </div>
-              <div
-                className="col-lg-4 col-md-6 wow zoomIn"
-                data-wow-delay="0.6s"
-              >
-                <div className="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                  <div className="service-icon">
-                    <i className="fa fa-chart-pie text-white" />
-                  </div>
-                  <h4 className="mb-3">Industrial Brass Fittings</h4>
-                  <p className="m-0">
-                    Our industrial brass fittings ensure reliability and
-                    durability, making them ideal for various industrial
-                    applications.
-                  </p>
-                  <a className="btn btn-lg btn-primary rounded" href="/">
-                    <i className="bi bi-arrow-right" />
-                  </a>
-                </div>
-              </div>
-              <div
-                className="col-lg-4 col-md-6 wow zoomIn"
-                data-wow-delay="0.9s"
-              >
-                <div className="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                  <div className="service-icon">
-                    <i className="fa fa-code text-white" />
-                  </div>
-                  <h4 className="mb-3">Custom Brass Products</h4>
-                  <p className="m-0">
-                    Let us bring your ideas to life with our custom brass
-                    products tailored to your unique specifications and
-                    requirements.
-                  </p>
-                  <a className="btn btn-lg btn-primary rounded" href="/">
-                    <i className="bi bi-arrow-right" />
-                  </a>
-                </div>
-              </div>
-              <div
-                className="col-lg-4 col-md-6 wow zoomIn"
-                data-wow-delay="0.3s"
-              >
-                <div className="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                  <div className="service-icon">
-                    <i className="fab fa-android text-white" />
-                  </div>
-                  <h4 className="mb-3">Brass Decoratives</h4>
-                  <p className="m-0">
-                    Elevate your space with our exquisite range of brass
-                    decoratives, crafted with precision and elegance.
-                  </p>
-                  <a className="btn btn-lg btn-primary rounded" href="/">
-                    <i className="bi bi-arrow-right" />
-                  </a>
-                </div>
-              </div>
-              <div
-                className="col-lg-4 col-md-6 wow zoomIn"
-                data-wow-delay="0.6s"
-              >
-                <div className="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                  <div className="service-icon">
-                    <i className="fa fa-search text-white" />
-                  </div>
-                  <h4 className="mb-3">Brass Laboratory Equipment</h4>
-                  <p className="m-0">
-                    Ensure precision and accuracy in your laboratory with our
-                    high-quality brass laboratory equipment.
-                  </p>
-                  <a className="btn btn-lg btn-primary rounded" href="/">
-                    <i className="bi bi-arrow-right" />
-                  </a>
-                </div>
-              </div>
+              ))}
+
               {false && (
                 <div
                   className="col-lg-4 col-md-6 wow zoomIn"
@@ -552,29 +480,76 @@ const Home = () => {
         {/* Testimonial End */}
 
         {/* Vendor Start */}
-       {false && <div
-          className="container-fluid py-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          <div className="container py-5 mb-5">
-            <div className="bg-white">
-              <div className="owl-carousel vendor-carousel">
-                <img src="img/vendor-1.jpg" alt="" />
-                <img src="img/vendor-2.jpg" alt="" />
-                <img src="img/vendor-3.jpg" alt="" />
-                <img src="img/vendor-4.jpg" alt="" />
-                <img src="img/vendor-5.jpg" alt="" />
-                <img src="img/vendor-6.jpg" alt="" />
-                <img src="img/vendor-7.jpg" alt="" />
-                <img src="img/vendor-8.jpg" alt="" />
-                <img src="img/vendor-9.jpg" alt="" />
+        {false && (
+          <div
+            className="container-fluid py-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div className="container py-5 mb-5">
+              <div className="bg-white">
+                <div className="owl-carousel vendor-carousel">
+                  <img src="img/vendor-1.jpg" alt="" />
+                  <img src="img/vendor-2.jpg" alt="" />
+                  <img src="img/vendor-3.jpg" alt="" />
+                  <img src="img/vendor-4.jpg" alt="" />
+                  <img src="img/vendor-5.jpg" alt="" />
+                  <img src="img/vendor-6.jpg" alt="" />
+                  <img src="img/vendor-7.jpg" alt="" />
+                  <img src="img/vendor-8.jpg" alt="" />
+                  <img src="img/vendor-9.jpg" alt="" />
+                </div>
               </div>
             </div>
           </div>
-        </div>}
+        )}
       </>
     </Fragment>
   );
 };
 
 export default Home;
+
+const services = [
+  {
+    icon: "fa fa-shield-alt",
+    title: "Brass Components",
+    description:
+      "We offer a wide range of high-quality brass components tailored to meet your specific requirements.",
+    delay: "0.3s",
+  },
+  {
+    icon: "fa fa-chart-pie",
+    title: "Industrial Brass Fittings",
+    description:
+      "Our industrial brass fittings ensure reliability and durability, making them ideal for various industrial applications.",
+    delay: "0.6s",
+  },
+  {
+    icon: "fa fa-code",
+    title: "Custom Brass Products",
+    description:
+      "Let us bring your ideas to life with our custom brass products tailored to your unique specifications and requirements.",
+    delay: "0.9s",
+  },
+  {
+    icon: "fab fa-android",
+    title: "Brass Decoratives",
+    description:
+      "Elevate your space with our exquisite range of brass decoratives, crafted with precision and elegance.",
+    delay: "1.2s",
+  },
+  {
+    icon: "fa fa-search",
+    title: "Brass Laboratory Equipment",
+    description:
+      "Ensure precision and accuracy in your laboratory with our high-quality brass laboratory equipment.",
+    delay: "1.5s",
+  },
+  {
+    icon: "fa fa-wrench",
+    title: "Brass Maintenance Process",
+    description:
+      "Ensure the longevity and optimal performance of your brass components with our specialized maintenance Process.",
+    delay: "1.8s",
+  },
+];

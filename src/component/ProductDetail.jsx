@@ -1,10 +1,12 @@
 import React, { Fragment, useLayoutEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import { NavPath } from "../common/nevigation/NavPath";
-import { productsArr } from "./Product";
-
+import { mainProductArr } from "../data/Product.ts";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import Carousel from "./Crousal.tsx";
 const tagCloud = [
-  "Brass Components",
   "Precision Engineering",
   "Quality Manufacturing",
   "Custom Solutions",
@@ -135,7 +137,12 @@ const ProductDetail = () => {
     const shuffledProducts = shuffleArray(products);
     return shuffledProducts.slice(0, count);
   };
-  const randomProducts = selectRandomProducts(productsArr, 3);
+  const randomProducts = selectRandomProducts(
+    mainProductArr
+      .filter((item) => parseInt(item.Shortorder) !== 0) // Filter out items with Shortorder not equal to 0
+      .sort((a, b) => parseInt(a.Shortorder) - parseInt(b.Shortorder)),
+    3
+  );
   function formatUrlStringToDisplay(url) {
     // Split the URL string by hyphens
     const words = url.split("-");
@@ -152,8 +159,9 @@ const ProductDetail = () => {
   }
 
   useLayoutEffect(() => {
-    setShowProduct(productsde.find((key) => id === key.path));
+    setShowProduct(mainProductArr.find((key) => id === key.path));
   }, [id]);
+
   return (
     <Fragment>
       <div
@@ -163,7 +171,7 @@ const ProductDetail = () => {
         <div className="row py-5">
           <div className="col-12 pt-lg-5 mt-lg-5 text-center">
             <h1 className="display-4 text-white animated zoomIn">
-              {formatUrlStringToDisplay(id)}
+              {showproduct?.name}
             </h1>
             <NavLink to={NavPath.HomeRoute} className="h5 text-white">
               Home
@@ -215,11 +223,8 @@ const ProductDetail = () => {
               {/* Blog Detail Start */}
 
               <div className="mb-5">
-                <img
-                  className="img-fluid w-100 rounded mb-5"
-                  src={showproduct?.image}
-                  alt={showproduct?.name}
-                />
+                <Carousel images={showproduct?.image || []} />
+
                 <h1 className="mb-4">{showproduct?.title}</h1>
                 <p>{showproduct?.content}</p>
               </div>
@@ -400,9 +405,14 @@ const ProductDetail = () => {
                     className="form-control p-3"
                     placeholder="Keyword"
                   />
-                  <button className="btn btn-primary px-4" onClick={() => {
-                      setShowProduct(productsde.find((key) => id === key.path));
-                  }}>
+                  <button
+                    className="btn btn-primary px-4"
+                    onClick={() => {
+                      setShowProduct(
+                        mainProductArr.find((key) => id === key.path)
+                      );
+                    }}
+                  >
                     <i className="bi bi-search" />
                   </button>
                 </div>
@@ -410,11 +420,13 @@ const ProductDetail = () => {
               {/* Search Form End */}
               {/* Category Start */}
               <div className="mb-5 wow slideInUp" data-wow-delay="0.1s">
-                <div className="section-title section-title-sm position-relative pb-3 mb-4">
-                  <h3 className="mb-0">Categories</h3>
-                </div>
+                {showproduct?.childParts?.length !== 0 && (
+                  <div className="section-title section-title-sm position-relative pb-3 mb-4">
+                    <h3 className="mb-0">Categories</h3>
+                  </div>
+                )}
                 <div className="link-animated d-flex flex-column justify-content-start">
-                  {productsde
+                  {mainProductArr
                     ?.find((key) => id === key.path)
                     ?.childParts?.map((product, index) => (
                       <NavLink
@@ -424,6 +436,7 @@ const ProductDetail = () => {
                           e.preventDefault();
                           setShowProduct(product);
                         }}
+                        key={index}
                       >
                         <i className="bi bi-arrow-right me-2" />
                         {product.name}
@@ -444,8 +457,13 @@ const ProductDetail = () => {
                   >
                     <img
                       className="img-fluid"
-                      src={product.imgSrc}
-                      style={{ width: 100, height: 100, objectFit: "cover" }}
+                      src={product.mainimage[0].img}
+                      style={{
+                        width: 100,
+                        height: 100,
+                        objectFit: "cover",
+                       
+                      }}
                       alt={product.name}
                     />
                     <NavLink
@@ -487,23 +505,28 @@ const ProductDetail = () => {
               )}
               {/* Tags End */}
               {/* Plain Text Start */}
-              <div className="wow slideInUp" data-wow-delay="0.1s">
-                <div className="section-title section-title-sm position-relative pb-3 mb-4">
-                  <h3 className="mb-0">Paratpar Brass Industries</h3>
+              {false && (
+                <div className="wow slideInUp" data-wow-delay="0.1s">
+                  <div className="section-title section-title-sm position-relative pb-3 mb-4">
+                    <h3 className="mb-0">Paratpar Industry</h3>
+                  </div>
+                  <div className="bg-light text-center" style={{ padding: 30 }}>
+                    <p>
+                      Paratpar Industry is a leading manufacturer of
+                      high-quality brass components, providing innovative
+                      solutions to various industries. With our commitment to
+                      excellence and customer satisfaction, we strive to deliver
+                      products of the highest standards.
+                    </p>
+                    <NavLink
+                      to="/contact"
+                      className="btn btn-primary py-2 px-4"
+                    >
+                      Read More
+                    </NavLink>
+                  </div>
                 </div>
-                <div className="bg-light text-center" style={{ padding: 30 }}>
-                  <p>
-                    Paratpar Brass Industries is a leading manufacturer of
-                    high-quality brass components, providing innovative
-                    solutions to various industries. With our commitment to
-                    excellence and customer satisfaction, we strive to deliver
-                    products of the highest standards.
-                  </p>
-                  <NavLink to="/contact" className="btn btn-primary py-2 px-4">
-                    Read More
-                  </NavLink>
-                </div>
-              </div>
+              )}
               {/* Plain Text End */}
             </div>
             {/* Sidebar End */}

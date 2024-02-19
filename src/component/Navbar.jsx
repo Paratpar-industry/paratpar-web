@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
+
 import { Link, NavLink } from "react-router-dom";
 import {
   BrowserRouter as Router,
@@ -8,6 +9,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import { NavPath } from "../common/nevigation/NavPath";
+import { mainProductArr } from "../data/Product.ts";
 const Navbar = () => {
   //   const [showNav, setShowNav] = useState(false);
   //   const [activeDropdown, setActiveDropdown] = useState(false);
@@ -25,8 +27,7 @@ const Navbar = () => {
   const closeDropdown = () => {
     setIsDropdownOpen(false);
   };
-  console.log = () => {};
-  console.error = () => {};
+
   useEffect(() => {
     window.scrollTo({ top: 0 });
     nav(location.pathname);
@@ -66,7 +67,6 @@ const Navbar = () => {
               <NavLink to={NavPath.AboutRoute} className="nav-item nav-link">
                 About
               </NavLink>
-
               <div
                 className={`nav-item dropdown ${isDropdownOpen ? "show" : ""}`}
                 onBlur={closeDropdown}
@@ -85,20 +85,26 @@ const Navbar = () => {
                     isDropdownOpen ? "show" : ""
                   }`}
                 >
-                  {Object.entries(NavPath.getProductNames()).map(
-                    ([key, value]) => (
+                  {mainProductArr
+                    .filter((item) => parseInt(item.Shortorder) !== 0) // Filter out items with Shortorder not equal to 0
+                    .sort(
+                      (a, b) => parseInt(a.Shortorder) - parseInt(b.Shortorder)
+                    )
+                    .map((item, index) => (
                       <NavLink
-                        key={key}
-                        to={NavPath.ProducDetailtRoute(value.value)} // Using ProductDetailRoute method to generate dynamic route
+                        key={index}
+                        to={NavPath.ProducDetailtRoute(item.path)} // Using ProductDetailRoute method to generate dynamic route
                         className="dropdown-item"
                         onClick={toggleDropdown} // Close dropdown when an item is clicked
                       >
-                        {value.name}
+                        {item.name}
                       </NavLink>
-                    )
-                  )}
+                    ))}
                 </div>
               </div>
+              <NavLink to={NavPath.Quality} className="nav-item nav-link">
+                Quality
+              </NavLink>
               <NavLink to={NavPath.ContactRoute} className="nav-item nav-link">
                 Contact
               </NavLink>

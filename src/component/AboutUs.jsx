@@ -51,7 +51,7 @@ const AboutUs = () => {
                 <div className="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
                   <h5 className="mb-3">
                     <i className="fa fa-check text-primary me-3" />
-                    Award-Winning Solutions
+                    Quality Excellence and Industry Recognition
                   </h5>
                   <h5 className="mb-3">
                     <i className="fa fa-check text-primary me-3" />
@@ -68,6 +68,22 @@ const AboutUs = () => {
                     Competitive Prices
                   </h5>
                 </div>
+              </div>
+              <div className="mb-3">
+                For us, no component is tough to manufacture. We can offer any
+                type of brass components as per customer's specification. Our
+                strong Technical staff can produce the component exactly as per
+                your drawings, specification within tolerance limits. Our
+                quality control division people rectify the products very
+                thoroughly to avoid any kind of future quality problems.
+              </div>
+              <div className="mb-3">
+                We assure you world class quality at highly competitive rates as
+                we import our own raw material and we have in house facility of
+                Furnace, production capacity work in dual shifts as and when
+                required to meet the delivery schedule. We also have our
+                facility of ultrasonic, electroplating plant for different kind
+                of finishes and plating on the product.
               </div>
               <div
                 className="d-flex align-items-center mb-4 wow fadeIn"
