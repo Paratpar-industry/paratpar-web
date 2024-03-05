@@ -22,12 +22,69 @@ export const mainProductArr = [
             "Explore our wide range of automotive parts designed for durability and performance.",
         Shortorder: "2",
         title: "Automotive Parts: Enhancing Performance and Durability",
-        content:
-            "Discover our wide range of automotive parts designed to enhance performance and durability. From engine components to accessories, we provide high-quality solutions for all your automotive needs.",
+        content: `
+        <div className="lower-content">
+  <h2>Overview</h2>
+  <div className="text">
+    <p>
+      We are engaged in the manufacture and supply of Brass Automobile Parts in
+      the marketplace. The Brass Auto Parts made available by us are fabricated
+      from high quality brass metal. These brass automobile parts are used in
+      all kinds of vehicles and automobiles as replacement parts. They are
+      resistant to corrosion and wear and tear for a longer period of time. In
+      addition to this, we are counted as one of the prime Brass Automotive
+      Parts Manufacturers based in India.
+    </p>
+    <h2>Features</h2>
+    <ul className="product-lists">
+      <li>
+        <a />
+        Made from high quality and tested raw materials to provide excellent
+        performance
+      </li>
+      <li>
+        <a />
+        Dimensional Accuracy &amp; Excellent Surface Finish
+      </li>
+      <li>
+        <a />
+        Durable &amp; Impact resistant
+      </li>
+      <li>
+        <a />
+        Thread as per International Go &amp; Not-Go Standards
+      </li>
+      <li>
+        <a />
+        Customized as per client’s requirement
+      </li>
+    </ul>
+    <h2>Standard</h2>
+    <p>DIN, ISO, ASTM, EN, JIS, GB and other International Standards.</p>
+    <h2>Material</h2>
+    <p>As per client’s requirement</p>
+    <h2>Surface Plating &amp; Coating</h2>
+    <p>
+      Natural Clean / Nickel Plated / Electro Tin Plated / Silver Plated /
+      Copper Plated / Zin Plated / Chrome Plated / Any Specific Surface Finish
+    </p>
+  </div>
+</div>
+
+
+        `
+        ,
         childParts: [
             {
                 name: "Measuring Instruments & Sensors",
-                image: ["https://i.postimg.cc/5tcTyCS7/ap1.jpg"],
+                "image": [
+                    {
+                        "img": "https://i.postimg.cc/5tcTyCS7/ap1.jpg",
+                        "tag": ""
+                    },
+
+                ],
+
                 content:
                     "Temperature sensors are used to measure temperature levels in various applications such as industrial processes, HVAC systems, and automotive engines.",
                 path: "Measuring Instruments & Sensors",
@@ -53,7 +110,15 @@ export const mainProductArr = [
         "maincontent": "",
         "title": "Cable Glands: Ensuring Secure Connections",
         "Shortorder": "1",
-        "content": "Explore our selection of cable glands designed to ensure secure connections in various applications. Our high-quality cable glands provide reliable sealing and strain relief, making them ideal for industrial and commercial use.",
+        "content": `We are specialized in manufacturing explosion proof industrial cable glands covering wide range of Armoured and Unarmored cable glands in varies types such as A1, A2, Bw, CW, E1W and so on. We have a team of dedicated persons who understand the critical demands of hazardous area and manufacture safe, flameproof, explosion proof, leak proof cable glands to prevent damage and hazards to the health and industry. All our cable glands are manufacture to global specification meeting all international standards and threads including BS 6121, DIN, JIS, BS 2874:CZ 121, IS 319, BS 249 and more. We are capable to offer any size cable glands as per custom specification. Cable Glands we manufacture provides mechanical retention, strain relief and earth continuity for electrical cables. We are committed to manufacture cable glands which are suitable for use with any type of cable & sealing system and also manufacturing cable gland accessories such as Earthing Tag, Lock Nut, PVC shroud, Reducers and more to fulfil the virtual need of cable gland used in hazardous area. 
+        
+        B.S.W., B.S.F., B.S.B., B.S.P. & B.S.P.T as per British Standard Whitworth Form
+N.C. & U.N.C., N.F. & U.N.F., N.P.T & N.P.S., N.S., N.E.F. etc. as per American National Form Threads
+ISO Metric (MM Threads)
+BA Threads
+DIN Standard
+GB Threads
+`,
         "childParts": [
             {
                 "name": "A1-A2 Type",
@@ -252,7 +317,9 @@ export const mainProductArr = [
         Shortorder: "3",
 
         content:
-            "Browse our collection of hydraulic and pneumatic fittings for smooth and efficient operations. Designed to meet industry standards, our fittings ensure precise control and reliable performance in hydraulic and pneumatic systems.",
+            `<div class="elementor-widget-container">
+			<style>/*! elementor - v3.19.0 - 07-02-2024 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>We are the industry leader in the production and distribution of Brass Pneumatic &amp; Hydraulic Fittings. We base the proportions of our pneumatic and hydraulic fitting components on modest exterior dimensions and big interior dimensions.&nbsp;</p><p>Offering a full line of pneumatic and hydraulic fittings in a variety of metal materials, adhering to its worldwide <Link to="#">quality standards</Link>, and following the road of technical excellence are the company’s distinctive traits.</p><p>We have allegedly made a name for ourselves in the field has completed a successful decade of illustrious track records in offering all of its respected clients cutting edge qualitative services at very reasonable costs with near accuracy in product manufacture in all aspects, from quality control to end user satisfaction.&nbsp;</p><p>It is dedicated to meeting all of the clients’ requirements in terms of different configurations. We are industry experts with years of experience.&nbsp;&nbsp;</p><p>On the basis of drawings and specifications, we can provide bespoke brass product manufacture.&nbsp;</p><p>From first quotation through final invoicing and client information updating, we are extremely careful about the quality of all our operations and procedures.</p><p>Our company’s mission is to give customers the maximum amount of happiness by supplying them with high-quality goods at the times and locations they want.</p>						</div>`,
         childParts: [
             {
                 name: "Compression Fittings",
@@ -448,7 +515,7 @@ export const mainProductArr = [
         Shortorder: "4",
 
         content:
-            "Enhance your molding processes with our reliable and durable molding inserts. Designed for precise fit and optimal performance, our inserts improve mold quality and productivity, ensuring consistent results in every molding application.",
+            "We are manufacturing wide range of brass PPR/CPVC inserts and fittings in different size, material, thread and type and exporting it to various countries. Our comprehensive range of Brass PPR/CPVC Insert include male ppr insert, female ppr insert, male cpvc insert, female cpvc insert and more. These Brass PPR and CPVC inserts manufactured from high grade brass alloys and sophisticated techniques. All our brass PPR and CPVC inserts are adhering to DIN, JIS and other international norms and standards to fulfill the varied need of customer. We are capable to offer wide range of knurling including Diamond Knurling, Straight Knurling, Unidirectional Knurling or as per customer specification. Inner diameter (I/D) after threads with very close tolerance to prevent unnecessary flush to inter into the inserts. Our finest quality brass PPR/CPVC inserts are suitable for most of the applicable PPR Pipes, gas cylinders, electrical equipments and pipe line assembling. ",
         childParts: [
             {
                 name: "Molding Inserts",
@@ -532,7 +599,7 @@ export const mainProductArr = [
         Shortorder: "5",
 
         content:
-            "Discover our high-quality neutral bar blocks for efficient electrical connections. Engineered for reliability and safety, our neutral bars and blocks ensure secure and consistent electrical connections, minimizing downtime and enhancing productivity.",
+            "We offer a wide range of Brass Neutral Link Bars, Neutral Earth Bars and Brass Terminal Blocks in different sizes for electrical, electronics and telecommunication industrial requirements.You can get precision quality products with reasonable price and great service.We manufacture Neutral Link- Bar and Earthing Terminals as per international standards and tolerances.Brass Neutral Links, Earth Bar and Terminal Blocks are available in different types or size including 4 way, 8 way, 12 way, 26 way, 1 meter length and many more.Brass Neutral Links, Earth Bars and Terminal Blocks are available with tin plated or nickel - plated finish.We also manufacture earth neutral bars in different sizes as per customer specification.We provide Brass Neutral Link Bars for all types of panel boards, switch gears and electrical switch boards.Neutral Link Bars are generally used in main electrical panel, street drop or meter, and also at the final step - down transformer of the supply.Get a Quick Quote for any type of requirements related to Neutral Links..",
         childParts: [],
     },
     {
@@ -613,7 +680,7 @@ export const mainProductArr = [
         ],
         mainimage: [
             {
-                img: "https://i.postimg.cc/qR7Qv34R/image.jpg",
+                img: "https://i.postimg.cc/SNMQ4nxT/Main-image.jpg",
                 tag: "",
             },
         ],
@@ -624,7 +691,32 @@ export const mainProductArr = [
         Shortorder: "6",
 
         content:
-            "Find high-quality sanitary and plumbing fittings to meet your specific requirements. Our range includes a variety of fittings for plumbing and sanitary applications, ensuring reliability and durability in every installation.",
+            `<div class="lower-content">
+						<h2>Overview</h2>
+						<div class="text">
+						<p>Our company has earned a remarkable position in the domain for being a remarkable manufacturer and exporter of finest range of Waste Coupling including Waste Coupling, Pop-Up Waste, Long Waste Coupling, etc. These are made from finest grade raw material sourced from trusted vendors in the market. We have a team of experienced in-house experts having in-depth production knowledge of Waste Coupling range. The range is tested and approved by quality experts. The quality ensures long working life, optimum performance, high resistance from corrosion and rusting, and durability. </p>
+
+						<p>We have also earned great market reputation as trusted supplier and manufacturer of superlative quality <strong>Brass Sanitary Fittings</strong> that include Brass Washing Machine Tap Nozzle, Brass Water Filter Nozzle, Brass Water Meter Coupling, etc. These are manufactured using the best grade raw material sourced from trusted suppliers in the market. A modern infrastructure and sophisticated technology are used in the production of the entire range for ensuring precise technical specifications, optimum finishing, compliance with national and international quality standards and norms.</p>
+
+
+					 <h2>Features</h2>
+
+					 <ul class="product-lists">
+                                <li><a></a>Made from high quality and tested raw materials to provide excellent performance</li>
+                                <li><a></a>Dimensional Accuracy &amp; Excellent Surface Finish</li>
+                                <li><a></a>Durable &amp; Impact resistant</li>
+                                <li><a></a>Thread as per International Go &amp; Not-Go Standards</li>
+                                <li><a></a>Customized as per client’s requirement</li>
+                            </ul>
+
+						 <h2>Standard</h2>
+							<p>DIN, ISO, ASTM, EN, JIS, GB and other International Standards.</p>
+							 <h2>Material</h2>
+							 <p>As per client’s requirement</p>
+							 <h2>Surface Plating &amp; Coating</h2>
+							 <p>Natural Clean / Nickel Plated / Electro Tin Plated / Silver Plated / Copper Plated / Zin Plated / Chrome Plated / Any Specific Surface Finish</p>
+							   </div>
+						</div>`,
         childParts: [],
     },
     {
@@ -632,17 +724,17 @@ export const mainProductArr = [
         name: "CNC Turned Parts",
         image: [
             {
-                img: "https://i.postimg.cc/qRLbMrnb/High-Volume-Image.jpg",
+                img: "https://i.postimg.cc/15YLDyf4/image.jpg",
                 tag: "",
             },
             {
-                img: "https://i.postimg.cc/QtsY3CBK/Sun-Rexroth-Hawe-Hydac-Cartridge-Valve-Hydraulic-Valves-with-CNC-Machining-Turning-Drilling.webp",
+                img: "https://i.postimg.cc/8CL98Wwr/image.webp",
                 tag: "",
             },
         ],
         mainimage: [
             {
-                img: "https://i.postimg.cc/qR7Qv34R/image.jpg",
+                img: "https://i.postimg.cc/cJ9BQx83/Main-image.jpg",
                 tag: "",
             },
         ],
@@ -653,7 +745,96 @@ export const mainProductArr = [
         Shortorder: "7",
 
         content:
-            "Find high-quality sanitary and plumbing fittings to meet your specific requirements. Our range includes a variety of fittings for plumbing and sanitary applications, ensuring reliability and durability in every installation.",
+            `<section>
+					    <div class="head-demo cncindiatag">
+					
+										</div>
+						<p>CNC turned components are our core competence and main product range. With highly sophisticated and advanced CNC machines, skilled workers and perfect manufacturing process, we manufacture CNC turning parts or CNC components in Mumbai, Pune, Nashik  &amp; Jamnagar, India that are best in quality and usability.</p>
+						<p>We have invested in cutting-edge turning machines and precision tools that ensure great perfection in products we manufacture. Also, we follow high quality standards in our rich manufacturing unit. Each product undergoes a strict quality check to identify and eliminate any loopholes. All this process is executed to ensure the products you get are best in quality and usability. </p>
+						<p>paratpar is one of the leading CNC components manufacturers in India because we take care of the demand and expectations of our valued customers. We offer a wide range of CNC turning parts and we are open to manufacturing custom CNC turned parts as per your unique requirements. Also, all the products are created in a way to offer the highest level of usability and remain affordable to you. </p>
+						<p>If you are looking to buy CNC Turned parts or CNC turned components in India, we have the right products for you. You can buy high quality components made of stainless steel, aluminum, carbon steel and copper alloy with us. Do let us know about your requirements, and we shall find the best products in our warehouse. Alternatively, do let us know what you need and we will get it manufactured for you. </p>
+						<p>We offer CNC Turned Components in different specifications as per the choice of our valuable clients. Feel free to Contact Us for further information.</p>
+
+<br>
+<br>
+
+		<div class="row">
+		
+						<div class="row">
+					<div class="col-sm-12">
+						<h2>paratpar Offers CNC Turned Parts which are used in various sector</h2>
+						<h3 class="h2-subheading"><strong>Classification:</strong></h3>
+
+						<ul style="list-style:none;">
+							<li> <i class="icon-chevron-right"></i> Automobile Sector. </li>
+							<li> <i class="icon-chevron-right"></i> Sensor Industries.</li>
+							<li> <i class="icon-chevron-right"></i> Instrumentation Sector.</li>
+							<li> <i class="icon-chevron-right"></i> Electrical Sector.</li>
+							<li> <i class="icon-chevron-right"></i> Electronic Sector.</li>
+							<li> <i class="icon-chevron-right"></i> Tele Communication Sector. </li>
+							<li> <i class="icon-chevron-right"></i> Moulding Industries.  </li>
+							<li> <i class="icon-chevron-right"></i> Valves and Water Industries. </li>
+							<li> <i class="icon-chevron-right"></i> Lighting Systems.</li>
+							<li> <i class="icon-chevron-right"></i> Control Systems. </li>
+							<li> <i class="icon-chevron-right"></i> Central heating Application..  </li>
+						</ul>
+
+						<h3 class="h2-subheading"><strong>Inspection Facilities:</strong></h3>
+
+						<ul style="list-style:none;">
+							<li> <i class="icon-chevron-right"></i> Vernier Caliper. </li>
+							<li> <i class="icon-chevron-right"></i> Micrometer.</li>
+							<li> <i class="icon-chevron-right"></i> Dial Caliper.</li>
+							<li> <i class="icon-chevron-right"></i> Plug Gauge(GO NOGO).</li>
+							<li> <i class="icon-chevron-right"></i> Ring Gauge(GO NOGO).</li>
+							<li> <i class="icon-chevron-right"></i> Pin Gauge. </li>
+							<li> <i class="icon-chevron-right"></i> Height Gauge. </li>
+
+						</ul>
+
+						<h3 class="h2-subheading"><strong>Raw Material:</strong></h3>
+
+						<ul style="list-style:none;">
+							<li> <i class="icon-chevron-right"></i> Free Cutting Brass IS-319 Types I or BS 249 Types I. </li>
+							<li> <i class="icon-chevron-right"></i> Any Special Non Ferrous Material Grade.</li>
+							<li> <i class="icon-chevron-right"></i> Brass as per ROHS Directive.</li>
+							<li> <i class="icon-chevron-right"></i> EN1A-Leaded.</li>
+							<li> <i class="icon-chevron-right"></i> SS – 303.</li>
+							<li> <i class="icon-chevron-right"></i> SS – 304 L. </li>
+						</ul>
+
+						<h3 class="h2-subheading"><strong>Threading:</strong></h3>
+
+						<ul style="list-style:none;">
+							<li> <i class="icon-chevron-right"></i> ISO Metric (MM Threads).</li>
+							<li> <i class="icon-chevron-right"></i> BA, BSW (INCHES), UNC, UNF, BSP, NPT, BSPT.</li>
+							<li> <i class="icon-chevron-right"></i> Any as per customer specification. </li>
+						</ul>
+
+						<h3 class="h2-subheading"><strong>Size:</strong></h3>
+
+						<ul style="list-style:none;">
+							<li> <i class="icon-chevron-right"></i> Circumference Diameter  1mm to 200mm with length of any size.</li>
+							<li> <i class="icon-chevron-right"></i> Apart from standard Brass Temperature Sensor parts, we develop customize Brass Temperature Sensor parts as per technical drawing or other relevant data.</li>
+
+						</ul>
+
+						<h3 class="h2-subheading"><strong>Finish:</strong></h3>
+
+						<ul style="list-style:none;">
+							<li> <i class="icon-chevron-right"></i> Natural. </li>
+							<li> <i class="icon-chevron-right"></i> Nickle Plated. </li>
+							<li> <i class="icon-chevron-right"></i> Silver Plated.</li>
+							<li> <i class="icon-chevron-right"></i> Tin Plated.</li>
+							<li> <i class="icon-chevron-right"></i> As per customer specification. </li>
+
+						</ul>
+
+					</div>
+				</div>
+
+
+						</section>`,
         childParts: [],
     },
 ];

@@ -2,10 +2,10 @@ import React, { Fragment, useLayoutEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import { NavPath } from "../common/nevigation/NavPath";
 import { mainProductArr } from "../data/Product.ts";
-import OwlCarousel from "react-owl-carousel";
+import parse from "html-react-parser";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import Carousel from "./Crousal.tsx";
+import Carousel from "./Crousal.jsx";
 const tagCloud = [
   "Precision Engineering",
   "Quality Manufacturing",
@@ -18,107 +18,6 @@ const tagCloud = [
   "Customer Satisfaction",
   "Product Excellence",
   "Global Presence",
-];
-const productsde = [
-  {
-    path: NavPath.getProductNames().automotiveParts.value,
-    name: "Automotive Parts",
-    image: "/img/blog-1.jpg",
-    title: "Automotive Parts: Enhancing Performance and Durability",
-    content:
-      "Discover our wide range of automotive parts designed to enhance performance and durability. From engine components to accessories, we provide high-quality solutions for all your automotive needs.",
-    childParts: [
-      {
-        name: "Temperature Sensors",
-        image: "/img/blog-1.jpg",
-        content:
-          "Temperature sensors are used to measure temperature levels in various applications such as industrial processes, HVAC systems, and automotive engines.",
-        path: "temperature-sensors",
-        title: "Automotive Parts: Temperature Sensors",
-      },
-      {
-        name: "Pressure Gauges",
-        image: "/img/blog-1.jpg",
-        content:
-          "Pressure gauges are devices used to measure the pressure of liquids and gases in tanks, pipelines, and other industrial systems.",
-        path: "pressure-gauges",
-        title: "Automotive Parts: Pressure Gauges",
-      },
-    ],
-  },
-  {
-    path: NavPath.getProductNames().cableGlands.value,
-    name: "Cable Glands",
-    image: "/img/cable-glands.jpg",
-    title: "Cable Glands: Ensuring Secure Connections",
-    content:
-      "Explore our selection of cable glands designed to ensure secure connections in various applications. Our high-quality cable glands provide reliable sealing and strain relief, making them ideal for industrial and commercial use.",
-  },
-  {
-    path: NavPath.getProductNames().earthingLightening.value,
-    name: NavPath.getProductNames().earthingLightening.name,
-    image: "/img/earthing-lightning.jpg",
-    title: "Earthing & Lightning Solutions: Safety and Protection",
-    content:
-      "Ensure safety and protection with our premium earthing and lightning solutions. Designed to meet the highest standards, our products provide reliable performance in diverse environments, protecting your assets and personnel.",
-  },
-  {
-    path: NavPath.getProductNames().fasteners.value,
-    name: NavPath.getProductNames().fasteners.name,
-    image: "/img/fasteners.jpg",
-    title: "Fasteners: Secure and Reliable Connections",
-    content:
-      "Find the perfect fasteners for your projects with our diverse range of options. From screws and bolts to nuts and washers, our fasteners are engineered for durability and reliability, ensuring secure connections in any application.",
-  },
-  {
-    path: NavPath.getProductNames().hydraulicPneumaticFittings.value,
-    name: NavPath.getProductNames().hydraulicPneumaticFittings.name,
-    image: "/img/hydraulic-pneumatic-fittings.jpg",
-    title: "Hydraulic & Pneumatic Fittings: Precision and Efficiency",
-    content:
-      "Browse our collection of hydraulic and pneumatic fittings for smooth and efficient operations. Designed to meet industry standards, our fittings ensure precise control and reliable performance in hydraulic and pneumatic systems.",
-  },
-  {
-    path: NavPath.getProductNames().measuringInstrumentsSensors.value,
-    name: NavPath.getProductNames().measuringInstrumentsSensors.name,
-    image: "/img/measuring-instruments-sensors.jpg",
-    title: "Measuring Instruments & Sensors: Precision Measurement",
-    content:
-      "Achieve precision and accuracy with our advanced measuring instruments and sensors. From temperature sensors to pressure gauges, our products deliver reliable measurements for a wide range of applications, ensuring quality and efficiency.",
-  },
-  {
-    path: NavPath.getProductNames().mouldingInserts.value,
-    name: NavPath.getProductNames().mouldingInserts.name,
-    image: "/img/moulding-inserts.jpg",
-    title: "Moulding Inserts: Enhancing Molding Processes",
-    content:
-      "Enhance your molding processes with our reliable and durable moulding inserts. Designed for precise fit and optimal performance, our inserts improve mold quality and productivity, ensuring consistent results in every molding application.",
-  },
-  {
-    path: NavPath.getProductNames().neutralBarBlocks.value,
-    name: NavPath.getProductNames().neutralBarBlocks.name,
-    image: "/img/neutral-bar-blocks.jpg",
-    title: "Neutral Bar & Blocks: Efficient Electrical Connections",
-    content:
-      "Discover our high-quality neutral bar blocks for efficient electrical connections. Engineered for reliability and safety, our neutral bars and blocks ensure secure and consistent electrical connections, minimizing downtime and enhancing productivity.",
-  },
-  {
-    path: NavPath.getProductNames().oilGas.value,
-    name: NavPath.getProductNames().oilGas.name,
-    image: "/img/oil-gas.jpg",
-    title:
-      "Oil & Gas Solutions: Comprehensive Range for Industrial Applications",
-    content:
-      "Explore our comprehensive range of oil and gas solutions for various industrial applications. From pipeline components to drilling equipment, we offer high-quality products designed to meet the demanding requirements of the oil and gas industry.",
-  },
-  {
-    path: NavPath.getProductNames().sanitaryPlumbingFittings.value,
-    name: NavPath.getProductNames().sanitaryPlumbingFittings.name,
-    image: "/img/sanitary-plumbing-fittings.jpg",
-    title: "Sanitary & Plumbing Fittings: High-Quality Solutions",
-    content:
-      "Find high-quality sanitary and plumbing fittings to meet your specific requirements. Our range includes a variety of fittings for plumbing and sanitary applications, ensuring reliability and durability in every installation.",
-  },
 ];
 
 const ProductDetail = () => {
@@ -226,7 +125,8 @@ const ProductDetail = () => {
                 <Carousel images={showproduct?.image || []} />
 
                 <h1 className="mb-4">{showproduct?.title}</h1>
-                <p>{showproduct?.content}</p>
+{typeof showproduct?.content === 'string' ? parse(showproduct?.content) : <></>}
+                {/* {parse(showproduct?.content)} */}
               </div>
 
               {false && (
@@ -462,7 +362,6 @@ const ProductDetail = () => {
                         width: 100,
                         height: 100,
                         objectFit: "cover",
-                       
                       }}
                       alt={product.name}
                     />

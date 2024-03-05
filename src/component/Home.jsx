@@ -13,8 +13,13 @@ const Home = () => {
           data-bs-ride="carousel"
         >
           <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img className="w-100" src="img/carousel-1.jpg" alt="img" />
+            <div className="carousel-item active" style={{ height: "700px" }}>
+              <img
+                className="w-100 h-100"
+                style={{ objectFit: "cover", height: "100%" }}
+                src="https://i.postimg.cc/mkMnFJ3V/Top-brass-machining-manufacturers-suppliers-usa-min.jpg"
+                alt="img"
+              />
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                 <div className="p-3" style={{ maxWidth: 900 }}>
                   <h5 className="text-white text-uppercase mb-3 animated slideInDown">
@@ -38,33 +43,13 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="carousel-item">
-              <img className="w-100" src="img/carousel-2.jpg" alt="img" />
-              <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                <div className="p-3" style={{ maxWidth: 900 }}>
-                  <h5 className="text-white text-uppercase mb-3 animated slideInDown">
-                    Creative &amp; Innovative
-                  </h5>
-                  <h1 className="display-1 text-white mb-md-4 animated zoomIn">
-                    Creative &amp; Innovative industries Solution
-                  </h1>
-                  {/* <a
-                    href="quote.html"
-                    className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
-                  >
-                    Free Quote
-                  </a>
-                  <a
-                    href="/"
-                    className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"
-                  >
-                    Contact Us
-                  </a> */}
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img className="w-100" src="img/carousel-2.jpg" alt="img" />
+            <div className="carousel-item" style={{ height: "700px" }}>
+              <img
+                className="w-100 h-100"
+                style={{ objectFit: "cover", height: "100%" }}
+                src="https://i.postimg.cc/tg8QZ3Qq/some-brass-bars-in-my-familys-industry-R0-R6-EB-transformed.jpg"
+                alt="img"
+              />
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                 <div className="p-3" style={{ maxWidth: 900 }}>
                   <h5 className="text-white text-uppercase mb-3 animated slideInDown">
@@ -88,8 +73,43 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="carousel-item">
-              <img className="w-100" src="img/carousel-2.jpg" alt="img" />
+            <div className="carousel-item" style={{ height: "700px" }}>
+              <img
+                className="w-100 h-100"
+                style={{ objectFit: "cover", height: "100%" }}
+                src="https://i.postimg.cc/43gnSj7V/crousal-1.jpg"
+                alt="img"
+              />
+              <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                <div className="p-3" style={{ maxWidth: 900 }}>
+                  <h5 className="text-white text-uppercase mb-3 animated slideInDown">
+                    Creative &amp; Innovative
+                  </h5>
+                  <h1 className="display-1 text-white mb-md-4 animated zoomIn">
+                    Creative &amp; Innovative industries Solution
+                  </h1>
+                  {/* <a
+                    href="quote.html"
+                    className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                  >
+                    Free Quote
+                  </a>
+                  <a
+                    href="/"
+                    className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"
+                  >
+                    Contact Us
+                  </a> */}
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item" style={{ height: "700px" }}>
+              <img
+                className="w-100 h-100"
+                style={{ objectFit: "cover", height: "100%" }}
+                src="https://i.postimg.cc/mkMnFJ3V/Top-brass-machining-manufacturers-suppliers-usa-min.jpg"
+                alt="img"
+              />
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                 <div className="p-3" style={{ maxWidth: 900 }}>
                   <h5 className="text-white text-uppercase mb-3 animated slideInDown">

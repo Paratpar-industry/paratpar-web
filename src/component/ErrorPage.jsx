@@ -6,28 +6,6 @@ import { NavLink, useNavigate } from "react-router-dom";
 
 const ErrorPage = () => {
   const navigate = useNavigate();
-const av =  [
-  {
-    path: " NavPath getProductNames automotiveParts value",
-    name: "Automotive Parts",
-    image: "https://i.postimg.cc/N03sgFKB/201905091854519886290.jpg",
-    mainimage: "https://i.postimg.cc/qR7Qv34R/image.jpg",
-    maincontent: "Explore our wide range of automotive parts designed for durability and performance.",
-    Shortorder: "2",
-    title: `Automotive Parts: Enhancing Performance and Durability`,
-    content: "Discover our wide range of automotive parts designed to enhance performance and durability. From engine components to accessories, we provide high-quality solutions for all your automotive needs.",
-    childParts: [
-      {
-        name: "Measuring Instruments & Sensors",
-        image: ["https://i.postimg.cc/5tcTyCS7/ap1.jpg"],
-        content: "Temperature sensors are used to measure temperature levels in various applications such as industrial processes, HVAC systems, and automotive engines.",
-        path: "Measuring Instruments & Sensors",
-        title: "Automotive Parts: Measuring Instruments & Sensors"
-      }]
-  }
-      
-    ]
-  
   
   useEffect(() => {
     setTimeout(() => {
