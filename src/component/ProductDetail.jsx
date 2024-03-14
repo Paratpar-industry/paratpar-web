@@ -334,7 +334,9 @@ const ProductDetail = () => {
                         to="#"
                         onClick={(e) => {
                           e.preventDefault();
-                          setShowProduct(product);
+                          if (!product.content) {
+                            product.content = showproduct.content;
+                          } setShowProduct(product);
                         }}
                         key={index}
                       >

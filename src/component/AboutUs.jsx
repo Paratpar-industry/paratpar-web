@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
-import Avatar from "react-avatar";
+// import Avatar from "react-avatar";
 
 // Inside your render method or functional component body
 

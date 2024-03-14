@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import { ApplicationShareData } from "../common/config/ApplicationShareData";
+import { mainProductArr } from "../data/Product.ts";
+import { NavPath } from "../common/nevigation/NavPath";
 
 const quickLinks = [
   { text: "Home", path: "/" },
@@ -9,12 +11,13 @@ const quickLinks = [
   { text: "Contact Us", path: "/contact" },
 ];
 
-const popularLinks = [
-  { text: "Home", path: "/" },
-  { text: "About Us", path: "/about" },
-  { text: "Product", path: "/product" },
-  { text: "Contact Us", path: "/contact" },
-];
+const popularLinks = mainProductArr
+  .filter((item) => parseInt(item.Shortorder) !== 0) // Filter out items with Shortorder not equal to 0
+  .sort((a, b) => parseInt(a.Shortorder) - parseInt(b.Shortorder))
+  .slice(0, 3)
+  .map((product, index) => {
+    return product;
+  });
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -65,7 +68,7 @@ const Footer = () => {
                         onMouseLeave={(e) => (e.target.style.color = "white")}
                         // className="text-primary mb-0"
                       >
-                      {ApplicationShareData.EmailAddress}
+                        {ApplicationShareData.EmailAddress}
                       </a>
                     </p>
                   </div>
@@ -78,7 +81,7 @@ const Footer = () => {
                         onMouseEnter={(e) => (e.target.style.color = "#06A3DA")}
                         onMouseLeave={(e) => (e.target.style.color = "white")}
                       >
-                       {ApplicationShareData.ContactNumber}
+                        {ApplicationShareData.ContactNumber}
                       </a>
                     </p>
                   </div>
@@ -135,11 +138,11 @@ const Footer = () => {
                       <NavLink
                         key={index}
                         className="text-light mb-2"
-                        to={link.path}
+                        to={NavPath.ProducDetailtRoute(link.path)}
                         onClick={scrollToTop} // Scroll to top when clicking on a link
                       >
                         <i className="bi bi-arrow-right text-primary me-2" />
-                        {link.text}
+                        {link.name}
                       </NavLink>
                     ))}
                   </div>
@@ -168,7 +171,6 @@ const Footer = () => {
                   </NavLink>
                   . All Rights Reserved.
                   {/*/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. *** /*/}
-                
                   <div className="credits">
                     Designed by{" "}
                     <NavLink className="stop" tp="/">

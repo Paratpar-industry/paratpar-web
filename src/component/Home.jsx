@@ -11,6 +11,7 @@ const Home = () => {
           id="header-carousel"
           className="carousel slide carousel-fade"
           data-bs-ride="carousel"
+          data-bs-interval="3000"
         >
           <div className="carousel-inner">
             <div className="carousel-item active" style={{ height: "700px" }}>
@@ -47,7 +48,7 @@ const Home = () => {
               <img
                 className="w-100 h-100"
                 style={{ objectFit: "cover", height: "100%" }}
-                src="https://i.postimg.cc/tg8QZ3Qq/some-brass-bars-in-my-familys-industry-R0-R6-EB-transformed.jpg"
+                src="https://i.postimg.cc/mkMnFJ3V/Top-brass-machining-manufacturers-suppliers-usa-min.jpg"
                 alt="img"
               />
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
@@ -73,6 +74,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
+
             <div className="carousel-item" style={{ height: "700px" }}>
               <img
                 className="w-100 h-100"
@@ -107,7 +109,7 @@ const Home = () => {
               <img
                 className="w-100 h-100"
                 style={{ objectFit: "cover", height: "100%" }}
-                src="https://i.postimg.cc/mkMnFJ3V/Top-brass-machining-manufacturers-suppliers-usa-min.jpg"
+                src="https://i.postimg.cc/tg8QZ3Qq/some-brass-bars-in-my-familys-industry-R0-R6-EB-transformed.jpg"
                 alt="img"
               />
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
@@ -346,59 +348,61 @@ const Home = () => {
         </div>
         {/* Service End */}
         {/* Pricing Plan Start */}
-        <div
-          className="container-fluid py-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          <div className="container py-5">
-            <div
-              className="section-title text-center position-relative pb-3 mb-5 mx-auto"
-              style={{ maxWidth: 600 }}
-            >
-              <h5 className="fw-bold text-primary text-uppercase">
-                Pricing Plans
-              </h5>
-              <h1 className="mb-0">
-                We are Offering Competitive Prices for Our Clients
-              </h1>
-            </div>
-            <div className="row g-0">
-              <div className="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                <div className="bg-light rounded">
-                  <div className="border-bottom py-4 px-5 mb-4">
-                    <h4 className="text-primary mb-1">Basic Plan</h4>
-                    <small className="text-uppercase">
-                      For Small Size Business
-                    </small>
+        {false && (
+          <div
+            className="container-fluid py-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div className="container py-5">
+              <div
+                className="section-title text-center position-relative pb-3 mb-5 mx-auto"
+                style={{ maxWidth: 600 }}
+              >
+                <h5 className="fw-bold text-primary text-uppercase">
+                  Pricing Plans
+                </h5>
+                <h1 className="mb-0">
+                  We are Offering Competitive Prices for Our Clients
+                </h1>
+              </div>
+              <div className="row g-0">
+                <div className="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                  <div className="bg-light rounded">
+                    <div className="border-bottom py-4 px-5 mb-4">
+                      <h4 className="text-primary mb-1">Basic Plan</h4>
+                      <small className="text-uppercase">
+                        For Small Size Business
+                      </small>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                <div
-                  className="bg-white rounded shadow position-relative"
-                  style={{ zIndex: 1 }}
-                >
-                  <div className="border-bottom py-4 px-5 mb-4">
-                    <h4 className="text-primary mb-1">Standard Plan</h4>
-                    <small className="text-uppercase">
-                      For Medium Size Business
-                    </small>
+                <div className="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                  <div
+                    className="bg-white rounded shadow position-relative"
+                    style={{ zIndex: 1 }}
+                  >
+                    <div className="border-bottom py-4 px-5 mb-4">
+                      <h4 className="text-primary mb-1">Standard Plan</h4>
+                      <small className="text-uppercase">
+                        For Medium Size Business
+                      </small>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-                <div className="bg-light rounded">
-                  <div className="border-bottom py-4 px-5 mb-4">
-                    <h4 className="text-primary mb-1">Advanced Plan</h4>
-                    <small className="text-uppercase">
-                      For Large Size Business
-                    </small>
+                <div className="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                  <div className="bg-light rounded">
+                    <div className="border-bottom py-4 px-5 mb-4">
+                      <h4 className="text-primary mb-1">Advanced Plan</h4>
+                      <small className="text-uppercase">
+                        For Large Size Business
+                      </small>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        )}
         {/* Pricing Plan End */}
         {/* Quote Start */}
         <QuateForm />

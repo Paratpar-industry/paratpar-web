@@ -1,10 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
   useNavigate,
   useLocation,
 } from "react-router-dom";
@@ -26,6 +23,10 @@ const Navbar = () => {
   };
   const closeDropdown = () => {
     setIsDropdownOpen(false);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   useEffect(() => {
@@ -61,10 +62,18 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto py-0">
-              <NavLink to={NavPath.HomeRoute} className="nav-item nav-link">
+              <NavLink
+                to={NavPath.HomeRoute}
+                className="nav-item nav-link"
+                onClick={scrollToTop}
+              >
                 Home
               </NavLink>
-              <NavLink to={NavPath.AboutRoute} className="nav-item nav-link">
+              <NavLink
+                to={NavPath.AboutRoute}
+                className="nav-item nav-link"
+                onClick={scrollToTop}
+              >
                 About
               </NavLink>
               <div
@@ -102,10 +111,18 @@ const Navbar = () => {
                     ))}
                 </div>
               </div>
-              <NavLink to={NavPath.Quality} className="nav-item nav-link">
+              <NavLink
+                to={NavPath.Quality}
+                className="nav-item nav-link"
+                onClick={scrollToTop}
+              >
                 Quality
               </NavLink>
-              <NavLink to={NavPath.ContactRoute} className="nav-item nav-link">
+              <NavLink
+                to={NavPath.ContactRoute}
+                className="nav-item nav-link"
+                onClick={scrollToTop}
+              >
                 Contact
               </NavLink>
             </div>

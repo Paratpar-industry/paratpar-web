@@ -2,11 +2,13 @@ import React from "react";
 
 const Carousel = ({ images }) => {
   const disableNavigation = images.length <= 1;
+  console.log(images);
   return (
     <div
       id="header-carousel"
       className="carousel slide carousel-fade"
       data-bs-ride="carousel"
+      data-bs-interval="2000"
       style={{ marginBottom: "30px" }}
     >
       <div className="carousel-inner">
@@ -41,8 +43,13 @@ const Carousel = ({ images }) => {
             type="button"
             data-bs-target="#header-carousel"
             data-bs-slide="prev"
+           
           >
-            <span className="carousel-control-prev-icon" aria-hidden="true" />
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+              style={{ color: "black", backgroundColor: "gray" }}
+            />
             <span className="visually-hidden">Previous</span>
           </button>
           <button
@@ -50,8 +57,13 @@ const Carousel = ({ images }) => {
             type="button"
             data-bs-target="#header-carousel"
             data-bs-slide="next"
+           
           >
-            <span className="carousel-control-next-icon" aria-hidden="true" />
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+              style={{ color: "black", backgroundColor: "gray" }}
+            />
             <span className="visually-hidden">Next</span>
           </button>
         </>

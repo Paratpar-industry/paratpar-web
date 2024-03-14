@@ -86,7 +86,7 @@ export const mainProductArr = [
                 ],
 
                 content:
-                    "Temperature sensors are used to measure temperature levels in various applications such as industrial processes, HVAC systems, and automotive engines.",
+                    "",
                 path: "Measuring Instruments & Sensors",
                 title: "Automotive Parts: Measuring Instruments & Sensors",
             },
@@ -107,17 +107,22 @@ export const mainProductArr = [
                 "tag": ""
             }
         ],
-        "maincontent": "",
+        "maincontent": "Discover our extensive selection of high-quality cable glands suitable for various industrial applications.",
         "title": "Cable Glands: Ensuring Secure Connections",
         "Shortorder": "1",
-        "content": `We are specialized in manufacturing explosion proof industrial cable glands covering wide range of Armoured and Unarmored cable glands in varies types such as A1, A2, Bw, CW, E1W and so on. We have a team of dedicated persons who understand the critical demands of hazardous area and manufacture safe, flameproof, explosion proof, leak proof cable glands to prevent damage and hazards to the health and industry. All our cable glands are manufacture to global specification meeting all international standards and threads including BS 6121, DIN, JIS, BS 2874:CZ 121, IS 319, BS 249 and more. We are capable to offer any size cable glands as per custom specification. Cable Glands we manufacture provides mechanical retention, strain relief and earth continuity for electrical cables. We are committed to manufacture cable glands which are suitable for use with any type of cable & sealing system and also manufacturing cable gland accessories such as Earthing Tag, Lock Nut, PVC shroud, Reducers and more to fulfil the virtual need of cable gland used in hazardous area. 
-        
-        B.S.W., B.S.F., B.S.B., B.S.P. & B.S.P.T as per British Standard Whitworth Form
-N.C. & U.N.C., N.F. & U.N.F., N.P.T & N.P.S., N.S., N.E.F. etc. as per American National Form Threads
-ISO Metric (MM Threads)
-BA Threads
-DIN Standard
-GB Threads
+        "content": `<div class="elementor-widget-container">
+    <style>
+        /*! elementor - v3.19.0 - 07-02-2024 */
+        .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}
+    </style>
+    <!-- Start of formatted content -->
+    <p>We are specialized in manufacturing explosion proof industrial cable glands covering a wide range of Armoured and Unarmored cable glands in various types such as A1, A2, Bw, CW, E1W, and so on. We have a team of dedicated persons who understand the critical demands of the hazardous area and manufacture safe, flameproof, explosion-proof, leak-proof cable glands to prevent damage and hazards to health and industry.</p>
+    <p>All our cable glands are manufactured to global specifications meeting all international standards and threads including BS 6121, DIN, JIS, BS 2874:CZ 121, IS 319, BS 249, and more. We are capable of offering any size cable glands as per custom specifications. Cable glands we manufacture provide mechanical retention, strain relief, and earth continuity for electrical cables.</p>
+    <p>We are committed to manufacturing cable glands which are suitable for use with any type of cable & sealing system and also manufacturing cable gland accessories such as Earthing Tag, Lock Nut, PVC shroud, Reducers, and more to fulfill the virtual need of cable gland used in a hazardous area.</p>
+    <p>B.S.W., B.S.F., B.S.B., B.S.P. & B.S.P.T as per British Standard Whitworth Form N.C. & U.N.C., N.F. & U.N.F., N.P.T & N.P.S., N.S., N.E.F. etc. as per American National Form Threads ISO Metric (MM Threads) BA Threads DIN Standard GB Threads</p>
+    <!-- End of formatted content -->
+</div>
+
 `,
         "childParts": [
             {
@@ -132,7 +137,7 @@ GB Threads
                         "tag": ""
                     }
                 ],
-                "content": "Temperature sensors are used to measure temperature levels in various applications such as industrial processes, HVAC systems, and automotive engines.",
+                "content": "",
                 "path": "A1-A2 Type",
                 "title": "Cable Glands:A1-A2 Type",
                 "Shortorder": "1"
@@ -149,7 +154,7 @@ GB Threads
                         "tag": ""
                     }
                 ],
-                "content": "Temperature sensors are used to measure temperature levels in various applications such as industrial processes, HVAC systems, and automotive engines.",
+                "content": "",
                 "path": "BW Type",
                 "title": "Cable Glands:BW Type",
                 "Shortorder": "2"
@@ -162,7 +167,7 @@ GB Threads
                         "tag": ""
                     }
                 ],
-                "content": "Temperature sensors are used to measure temperature levels in various applications such as industrial processes, HVAC systems, and automotive engines.",
+                "content": "",
                 "path": "CW Type",
                 "title": "Cable Glands:CW Type",
                 "Shortorder": "3"
@@ -175,7 +180,7 @@ GB Threads
                         "tag": ""
                     }
                 ],
-                "content": "Temperature sensors are used to measure temperature levels in various applications such as industrial processes, HVAC systems, and automotive engines.",
+                "content": "",
                 "path": "E1W Type",
                 "title": "Cable Glands:E1W Type",
                 "Shortorder": "4"
@@ -188,7 +193,7 @@ GB Threads
                         "tag": ""
                     }
                 ],
-                "content": "Temperature sensors are used to measure temperature levels in various applications such as industrial processes, HVAC systems, and automotive engines.",
+                "content": "",
                 "path": "E1FW Type",
                 "title": "Cable Glands:E1FW Type",
                 "Shortorder": "5"
@@ -201,7 +206,7 @@ GB Threads
                         "tag": ""
                     }
                 ],
-                "content": "Temperature sensors are used to measure temperature levels in various applications such as industrial processes, HVAC systems, and automotive engines.",
+                "content": "",
                 "path": "Marine & JIS Type",
                 "title": "Cable Glands:Marine & JIS Type",
                 "Shortorder": "6"
@@ -214,7 +219,7 @@ GB Threads
                         "tag": ""
                     }
                 ],
-                "content": "Temperature sensors are used to measure temperature levels in various applications such as industrial processes, HVAC systems, and automotive engines.",
+                "content": "",
                 "path": "PG Type",
                 "title": "Cable Glands:PG Type",
                 "Shortorder": "7"
@@ -227,7 +232,7 @@ GB Threads
                         "tag": ""
                     }
                 ],
-                "content": "Temperature sensors are used to measure temperature levels in various applications such as industrial processes, HVAC systems, and automotive engines.",
+                "content": "",
                 "path": "Single Compression Type",
                 "title": "Cable Glands:Single Compression Type",
                 "Shortorder": "8"
@@ -240,7 +245,7 @@ GB Threads
                         "tag": ""
                     }
                 ],
-                "content": "Temperature sensors are used to measure temperature levels in various applications such as industrial processes, HVAC systems, and automotive engines.",
+                "content": "",
                 "path": "Double Compression Type",
                 "title": "Cable Glands:Double Compression Type",
                 "ShortOrder": "9"
@@ -312,7 +317,7 @@ GB Threads
                 tag: "",
             },
         ],
-        maincontent: "--",
+        maincontent: "Browse our collection of hydraulic and pneumatic fittings crafted for reliability and efficiency.",
         title: "Hydraulic & Pneumatic Fittings: Precision and Efficiency",
         Shortorder: "3",
 
@@ -338,7 +343,7 @@ GB Threads
                     },
                 ],
                 content:
-                    "Temperature sensors are used to measure temperature levels in various applications such as industrial processes, HVAC systems, and automotive engines.",
+                    "",
                 path: "Compression Fittings",
                 title: "Hydraulic & Pneumatic Fittings:Compression Fittings",
                 Shortorder: "1",
@@ -360,7 +365,7 @@ GB Threads
                     },
                 ],
                 content:
-                    "Temperature sensors are used to measure temperature levels in various applications such as industrial processes, HVAC systems, and automotive engines.",
+                    "",
                 path: "Pipe Fittings",
                 title: "Hydraulic & Pneumatic Fittings:Pipe Fittings",
                 Shortorder: "2",
@@ -426,7 +431,7 @@ GB Threads
                     },
                 ],
                 content:
-                    "Temperature sensors are used to measure temperature levels in various applications such as industrial processes, HVAC systems, and automotive engines.",
+                    "",
                 path: "Flare Tube Fittings",
                 title: "Hydraulic & Pneumatic Fittings:Flare Tube Fittings",
                 Shortorder: "3",
@@ -449,7 +454,7 @@ GB Threads
                     },
                 ],
                 content:
-                    "Temperature sensors are used to measure temperature levels in various applications such as industrial processes, HVAC systems, and automotive engines.",
+                    "",
                 path: "Sanitary Fittings",
                 title: "Hydraulic & Pneumatic Fittings:Sanitary Fittings",
                 Shortorder: "4",
@@ -510,12 +515,27 @@ GB Threads
                 tag: "",
             },
         ],
-        maincontent: "--",
+        maincontent: "Explore our range of brass inserts designed to meet diverse industrial needs with precision engineering.",
         title: "Brass Inserts: Enhancing Molding Processes",
         Shortorder: "4",
 
         content:
-            "We are manufacturing wide range of brass PPR/CPVC inserts and fittings in different size, material, thread and type and exporting it to various countries. Our comprehensive range of Brass PPR/CPVC Insert include male ppr insert, female ppr insert, male cpvc insert, female cpvc insert and more. These Brass PPR and CPVC inserts manufactured from high grade brass alloys and sophisticated techniques. All our brass PPR and CPVC inserts are adhering to DIN, JIS and other international norms and standards to fulfill the varied need of customer. We are capable to offer wide range of knurling including Diamond Knurling, Straight Knurling, Unidirectional Knurling or as per customer specification. Inner diameter (I/D) after threads with very close tolerance to prevent unnecessary flush to inter into the inserts. Our finest quality brass PPR/CPVC inserts are suitable for most of the applicable PPR Pipes, gas cylinders, electrical equipments and pipe line assembling. ",
+            `
+            <div class="elementor-widget-container">
+    <style>
+        /*! elementor - v3.19.0 - 07-02-2024 */
+        .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}
+    </style>
+    <!-- Start of formatted content -->
+    <p>We are manufacturing a wide range of brass PPR/CPVC inserts and fittings in different sizes, materials, threads, and types and exporting them to various countries. Our comprehensive range of Brass PPR/CPVC Insert includes male PPR insert, female PPR insert, male CPVC insert, female CPVC insert, and more.</p>
+    <p>These Brass PPR and CPVC inserts are manufactured from high-grade brass alloys and sophisticated techniques. All our brass PPR and CPVC inserts adhere to DIN, JIS, and other international norms and standards to fulfill the varied needs of customers.</p>
+    <p>We are capable of offering a wide range of knurling including Diamond Knurling, Straight Knurling, Unidirectional Knurling, or as per customer specification. The inner diameter (I/D) after threads with very close tolerance to prevent unnecessary flush to enter into the inserts.</p>
+    <p>Our finest quality brass PPR/CPVC inserts are suitable for most of the applicable PPR Pipes, gas cylinders, electrical equipment, and pipeline assembling.</p>
+    <!-- End of formatted content -->
+</div>
+
+            
+            `,
         childParts: [
             {
                 name: "Molding Inserts",
@@ -534,7 +554,7 @@ GB Threads
                     },
                 ],
                 content:
-                    "Temperature sensors are used to measure temperature levels in various applications such as industrial processes, HVAC systems, and automotive engines.",
+                    "",
                 path: "Molding Inserts",
                 title: "Brass Inserts:Molding Inserts",
                 Shortorder: "1",
@@ -556,7 +576,7 @@ GB Threads
                     },
                 ],
                 content:
-                    "Temperature sensors are used to measure temperature levels in various applications such as industrial processes, HVAC systems, and automotive engines.",
+                    "",
                 path: "PPR & CPVC Inserts",
                 title: "Brass Inserts:PPR & CPVC Inserts",
                 Shortorder: "2",
@@ -594,12 +614,28 @@ GB Threads
                 tag: "Conduit Fittings",
             },
         ],
-        maincontent: "---",
+        maincontent: "Discover our assortment of brass electrical components engineered for superior performance and longevity.",
         title: "Brass Electrical Components: Efficient Electrical Connections",
         Shortorder: "5",
 
         content:
-            "We offer a wide range of Brass Neutral Link Bars, Neutral Earth Bars and Brass Terminal Blocks in different sizes for electrical, electronics and telecommunication industrial requirements.You can get precision quality products with reasonable price and great service.We manufacture Neutral Link- Bar and Earthing Terminals as per international standards and tolerances.Brass Neutral Links, Earth Bar and Terminal Blocks are available in different types or size including 4 way, 8 way, 12 way, 26 way, 1 meter length and many more.Brass Neutral Links, Earth Bars and Terminal Blocks are available with tin plated or nickel - plated finish.We also manufacture earth neutral bars in different sizes as per customer specification.We provide Brass Neutral Link Bars for all types of panel boards, switch gears and electrical switch boards.Neutral Link Bars are generally used in main electrical panel, street drop or meter, and also at the final step - down transformer of the supply.Get a Quick Quote for any type of requirements related to Neutral Links..",
+            `
+            <div class="elementor-widget-container">
+    <style>
+        /*! elementor - v3.19.0 - 07-02-2024 */
+        .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}
+    </style>
+    <!-- Start of formatted content -->
+    <p>We offer a wide range of Brass Neutral Link Bars, Neutral Earth Bars, and Brass Terminal Blocks in different sizes for electrical, electronics, and telecommunication industrial requirements.</p>
+    <p>You can get precision quality products with a reasonable price and great service. We manufacture Neutral Link-Bar and Earthing Terminals as per international standards and tolerances.</p>
+    <p>Brass Neutral Links, Earth Bars, and Terminal Blocks are available in different types or sizes including 4 way, 8 way, 12 way, 26 way, 1-meter length, and many more.</p>
+    <p>Brass Neutral Links, Earth Bars, and Terminal Blocks are available with tin-plated or nickel-plated finish. We also manufacture earth neutral bars in different sizes as per customer specification.</p>
+    <p>We provide Brass Neutral Link Bars for all types of panel boards, switch gears, and electrical switchboards. Neutral Link Bars are generally used in the main electrical panel, street drop or meter, and also at the final step-down transformer of the supply.</p>
+    <p>Get a Quick Quote for any type of requirements related to Neutral Links.</p>
+    <!-- End of formatted content -->
+</div>
+
+            `,
         childParts: [],
     },
     {
@@ -654,9 +690,10 @@ GB Threads
         name: "Brass Sanitary Parts",
         image: [
             {
-                img: "https://i.postimg.cc/TPsKB7tK/bath-tub-overflow-set-small.jpg",
+                img: "https://i.postimg.cc/zG0bFXWS/west-coupling-small.jpg",
                 tag: "",
             },
+
             {
                 img: "https://i.postimg.cc/R0h3s5Lr/brass-nipple-small.jpg",
                 tag: "",
@@ -674,9 +711,10 @@ GB Threads
                 tag: "",
             },
             {
-                img: "https://i.postimg.cc/zG0bFXWS/west-coupling-small.jpg",
+                img: "https://i.postimg.cc/TPsKB7tK/bath-tub-overflow-set-small.jpg",
                 tag: "",
             },
+
         ],
         mainimage: [
             {
@@ -749,7 +787,7 @@ GB Threads
 					    <div class="head-demo cncindiatag">
 					
 										</div>
-						<p>CNC turned components are our core competence and main product range. With highly sophisticated and advanced CNC machines, skilled workers and perfect manufacturing process, we manufacture CNC turning parts or CNC components in Mumbai, Pune, Nashik  &amp; Jamnagar, India that are best in quality and usability.</p>
+						<p>CNC turned components are our core competence and main product range. With highly sophisticated and advanced CNC machines, skilled workers and perfect manufacturing process, we manufacture CNC turning parts that are best in quality and usability.</p>
 						<p>We have invested in cutting-edge turning machines and precision tools that ensure great perfection in products we manufacture. Also, we follow high quality standards in our rich manufacturing unit. Each product undergoes a strict quality check to identify and eliminate any loopholes. All this process is executed to ensure the products you get are best in quality and usability. </p>
 						<p>paratpar is one of the leading CNC components manufacturers in India because we take care of the demand and expectations of our valued customers. We offer a wide range of CNC turning parts and we are open to manufacturing custom CNC turned parts as per your unique requirements. Also, all the products are created in a way to offer the highest level of usability and remain affordable to you. </p>
 						<p>If you are looking to buy CNC Turned parts or CNC turned components in India, we have the right products for you. You can buy high quality components made of stainless steel, aluminum, carbon steel and copper alloy with us. Do let us know about your requirements, and we shall find the best products in our warehouse. Alternatively, do let us know what you need and we will get it manufactured for you. </p>
@@ -838,6 +876,16 @@ GB Threads
         childParts: [],
     },
 ];
+
+const d1 = mainProductArr.filter((item) => parseInt(item.Shortorder) !== 0).map((item, index) => {
+    
+    return {
+        'name': item.name,
+        'maincontent': item.maincontent,
+        'path': item.path,
+    }
+})
+console.log(d1)
 
 
 
