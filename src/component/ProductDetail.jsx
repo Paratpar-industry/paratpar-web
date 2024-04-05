@@ -3,8 +3,8 @@ import { NavLink, useParams } from "react-router-dom";
 import { NavPath } from "../common/nevigation/NavPath";
 import { mainProductArr } from "../data/Product.ts";
 import parse from "html-react-parser";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
+// import "owl.carousel/dist/assets/owl.carousel.css";
+// import "owl.carousel/dist/assets/owl.theme.default.css";
 import Carousel from "./Crousal.jsx";
 const tagCloud = [
   "Precision Engineering",
@@ -65,7 +65,13 @@ const ProductDetail = () => {
     <Fragment>
       <div
         className="container-fluid bg-primary py-5 bg-header"
-        style={{ marginBottom: 90 }}
+        style={{
+          // background: `linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(${
+          //   showproduct?.image[0]?.img || "/img/carousel-1.jpg"
+          // }) center center no-repeat`,
+          marginBottom: 90,
+          // backgroundSize: "cover",
+        }}
       >
         <div className="row py-5">
           <div className="col-12 pt-lg-5 mt-lg-5 text-center">
@@ -120,12 +126,16 @@ const ProductDetail = () => {
           <div className="row g-5">
             <div className="col-lg-8">
               {/* Blog Detail Start */}
-
+              {/* <p>{JSON.stringify(showproduct?.image[0] || "ee")}</p> */}
               <div className="mb-5">
                 <Carousel images={showproduct?.image || []} />
 
                 <h1 className="mb-4">{showproduct?.title}</h1>
-{typeof showproduct?.content === 'string' ? parse(showproduct?.content) : <></>}
+                {typeof showproduct?.content === "string" ? (
+                  parse(showproduct?.content)
+                ) : (
+                  <></>
+                )}
                 {/* {parse(showproduct?.content)} */}
               </div>
 
@@ -336,7 +346,8 @@ const ProductDetail = () => {
                           e.preventDefault();
                           if (!product.content) {
                             product.content = showproduct.content;
-                          } setShowProduct(product);
+                          }
+                          setShowProduct(product);
                         }}
                         key={index}
                       >
@@ -435,30 +446,6 @@ const ProductDetail = () => {
         </div>
       </div>
       {/* Blog End */}
-      {/* Vendor Start */}
-      {false && (
-        <div
-          className="container-fluid py-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          <div className="container py-5 mb-5">
-            <div className="bg-white">
-              <div className="owl-carousel vendor-carousel">
-                <img src="/img/vendor-1.jpg" alt="" />
-                <img src="/img/vendor-2.jpg" alt="" />
-                <img src="/img/vendor-3.jpg" alt="" />
-                <img src="/img/vendor-4.jpg" alt="" />
-                <img src="/img/vendor-5.jpg" alt="" />
-                <img src="/img/vendor-6.jpg" alt="" />
-                <img src="/img/vendor-7.jpg" alt="" />
-                <img src="/img/vendor-8.jpg" alt="" />
-                <img src="/img/vendor-9.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-      {/* Vendor End */}
     </Fragment>
   );
 };

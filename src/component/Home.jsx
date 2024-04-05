@@ -18,7 +18,7 @@ const Home = () => {
               <img
                 className="w-100 h-100"
                 style={{ objectFit: "cover", height: "100%" }}
-                src="https://i.postimg.cc/mkMnFJ3V/Top-brass-machining-manufacturers-suppliers-usa-min.jpg"
+                src="https://i.postimg.cc/L5DTgGQf/Front-page-image-1.jpg"
                 alt="img"
               />
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">

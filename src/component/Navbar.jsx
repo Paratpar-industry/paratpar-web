@@ -1,10 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 
-import {  NavLink } from "react-router-dom";
-import {
-  useNavigate,
-  useLocation,
-} from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { NavPath } from "../common/nevigation/NavPath";
 import { mainProductArr } from "../data/Product.ts";
 const Navbar = () => {
@@ -41,10 +38,12 @@ const Navbar = () => {
       <div className="container-fluid position-relative p-0">
         <nav className="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
           <NavLink to="/" className="navbar-brand p-0">
-            <h1 className="m-0">
-              {/* <i className="fa fa-user-tie me-2" /> */}
-              Paratpar
-            </h1>
+            <img
+              src="https://i.postimg.cc/Hxxqjqm7/Paratpar-LOGO-1.jpg"
+              alt="paratpar"
+              height={80}
+              width={100}
+            />
           </NavLink>
           <button
             className="navbar-toggler"

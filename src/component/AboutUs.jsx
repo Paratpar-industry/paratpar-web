@@ -127,7 +127,7 @@ const AboutUs = () => {
       </div>
       {/* About End */}
       {/* Team Start */}
-      <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+     {false && <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div className="container py-5">
           <div
             className="section-title text-center position-relative pb-3 mb-5 mx-auto"
@@ -262,7 +262,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div>}
       {/* <Avatar name="John Doe" size="60" round={true} />; */}
       {/* Team End */}
     </Fragment>
