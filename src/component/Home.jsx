@@ -48,7 +48,7 @@ const Home = () => {
               <img
                 className="w-100 h-100"
                 style={{ objectFit: "cover", height: "100%" }}
-                src="https://i.postimg.cc/mkMnFJ3V/Top-brass-machining-manufacturers-suppliers-usa-min.jpg"
+                src="https://i.postimg.cc/43gnSj7V/crousal-1.jpg"
                 alt="img"
               />
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
@@ -79,7 +79,7 @@ const Home = () => {
               <img
                 className="w-100 h-100"
                 style={{ objectFit: "cover", height: "100%" }}
-                src="https://i.postimg.cc/43gnSj7V/crousal-1.jpg"
+                src="https://i.postimg.cc/tg8QZ3Qq/some-brass-bars-in-my-familys-industry-R0-R6-EB-transformed.jpg"
                 alt="img"
               />
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
@@ -109,7 +109,7 @@ const Home = () => {
               <img
                 className="w-100 h-100"
                 style={{ objectFit: "cover", height: "100%" }}
-                src="https://i.postimg.cc/tg8QZ3Qq/some-brass-bars-in-my-familys-industry-R0-R6-EB-transformed.jpg"
+                src="https://i.postimg.cc/mkMnFJ3V/Top-brass-machining-manufacturers-suppliers-usa-min.jpg"
                 alt="img"
               />
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">

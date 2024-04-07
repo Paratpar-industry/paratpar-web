@@ -161,8 +161,8 @@ const Footer = () => {
             <div className="col-lg-12 col-md-12">
               <div className="footer-legal text-center position-relative"></div>
               <div
-                className="d-flex align-items-center justify-content-center"
-                style={{ height: 75 }}
+                className="d-flex align-items-center justify-content-center "
+                style={{ paddingTop: "10px", paddingBottom: "10px" }}
               >
                 <p className="mb-0">
                   © Copyright{" "}
@@ -171,12 +171,14 @@ const Footer = () => {
                   </NavLink>
                   . All Rights Reserved.
                   {/*/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. *** /*/}
-                  <div className="credits">
-                    Designed by{" "}
-                    <NavLink className="stop" tp="/">
-                      Monil Nariya
-                    </NavLink>
-                  </div>
+                  {false && (
+                    <div className="credits">
+                      Designed by{" "}
+                      <NavLink className="stop" tp="/">
+                        Monil Nariya
+                      </NavLink>
+                    </div>
+                  )}
                 </p>
               </div>
             </div>

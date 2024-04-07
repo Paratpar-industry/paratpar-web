@@ -3,7 +3,7 @@ import Footer from "./component/Footer";
 import Navbar from "./component/Navbar";
 import AboutUs from "./component/AboutUs";
 import Home from "./component/Home";
-import ContectUs from "./component/ContectUs";
+import ContactUs from "./component/ContactUs";
 import ProductDetail from "./component/ProductDetail";
 import Product from "./component/Product";
 import ErrorPage from "./component/ErrorPage";
@@ -33,7 +33,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/product" element={<Product />} />
         <Route exact path="/about" element={<AboutUs />} />
-        <Route exact path={NavPath.ContactRoute} element={<ContectUs />} />
+        <Route exact path={NavPath.ContactRoute} element={<ContactUs />} />
         {/* <Route exact path="/formspark" element={<FormSpark />} /> */}
         <Route exact path={NavPath.Quality} element={<Quality />} />
         <Route exact path={NavPath.NotFound} element={<ErrorPage />} />

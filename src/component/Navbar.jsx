@@ -38,12 +38,7 @@ const Navbar = () => {
       <div className="container-fluid position-relative p-0">
         <nav className="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
           <NavLink to="/" className="navbar-brand p-0">
-            <img
-              src="https://i.postimg.cc/Hxxqjqm7/Paratpar-LOGO-1.jpg"
-              alt="paratpar"
-              height={80}
-              width={100}
-            />
+            <img src="/img/plogo.svg" alt="paratpar" height={80} />
           </NavLink>
           <button
             className="navbar-toggler"
