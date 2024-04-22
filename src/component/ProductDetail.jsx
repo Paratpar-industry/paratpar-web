@@ -103,6 +103,7 @@ const ProductDetail = () => {
                 data-bs-dismiss="modal"
                 aria-label="Close"
               />
+             
             </div>
             <div className="modal-body d-flex align-items-center justify-content-center">
               <div className="input-group" style={{ maxWidth: 600 }}>
@@ -112,7 +113,7 @@ const ProductDetail = () => {
                   placeholder="Type search keyword"
                 />
                 <button className="btn btn-primary px-4">
-                  <i className="bi bi-search" />
+                  <i className="bi-arrow-right" />
                 </button>
               </div>
             </div>
@@ -121,7 +122,11 @@ const ProductDetail = () => {
       </div>
       {/* Full Screen Search End */}
       {/* Blog Start */}
-      <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div
+        className="container-fluid py-5 wow fadeInUp"
+        data-wow-delay="0.1s"
+        id="pdiv"
+      >
         <div className="container py-5">
           <div className="row g-5">
             <div className="col-lg-8">
@@ -323,7 +328,7 @@ const ProductDetail = () => {
                       );
                     }}
                   >
-                    <i className="bi bi-search" />
+                    <i className="bi-arrow-right" />
                   </button>
                 </div>
               </div>
@@ -347,6 +352,13 @@ const ProductDetail = () => {
                           if (!product.content) {
                             product.content = showproduct.content;
                           }
+                          const divElement = document.getElementById("pdiv"); // Replace 'your-div-id' with the actual ID of your div element
+                          const offsetTop = divElement.offsetTop;
+                          window.scrollTo({
+                            top: offsetTop,
+                            behavior: "smooth",
+                          });
+
                           setShowProduct(product);
                         }}
                         key={index}

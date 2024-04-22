@@ -18,7 +18,7 @@ const getProductCard = (product) => (
         />
         <NavLink
           className="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
-          href="#"
+          to={NavPath.ProducDetailtRoute(product.path)}
         >
           {product?.name}
         </NavLink>

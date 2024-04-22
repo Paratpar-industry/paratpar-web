@@ -2,7 +2,7 @@ import React from "react";
 
 const Carousel = ({ images }) => {
   const disableNavigation = images.length <= 1;
-  console.log(images);
+
   return (
     <div
       id="header-carousel"
@@ -15,7 +15,7 @@ const Carousel = ({ images }) => {
         {images.map((image, index) => (
           <div
             key={index}
-            className={`carousel-item ${index === 0 ? "active" : ""}`}
+            className={`carousel-item ${index === 0 ? "active " : ""}`}
           >
             <img
               className="w-100"
@@ -23,7 +23,7 @@ const Carousel = ({ images }) => {
               alt={""}
               style={{ height: "600px" }}
             />
-            <div className="carousel-caption1 d-flex flex-column align-items-center justify-content-center">
+            <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div className="p-3" style={{ maxWidth: 900 }}>
                 <h5 className="text-white text-uppercase mb-3 animated slideInDown">
                   {image?.tag}
@@ -43,7 +43,6 @@ const Carousel = ({ images }) => {
             type="button"
             data-bs-target="#header-carousel"
             data-bs-slide="prev"
-           
           >
             <span
               className="carousel-control-prev-icon"
@@ -57,7 +56,6 @@ const Carousel = ({ images }) => {
             type="button"
             data-bs-target="#header-carousel"
             data-bs-slide="next"
-           
           >
             <span
               className="carousel-control-next-icon"

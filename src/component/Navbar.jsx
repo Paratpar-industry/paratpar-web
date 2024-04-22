@@ -17,12 +17,15 @@ const Navbar = () => {
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
+    
   };
   const closeDropdown = () => {
     setIsDropdownOpen(false);
   };
 
   const scrollToTop = () => {
+    const navbar = document.getElementById("navbarCollapse");
+    navbar.classList.toggle("show"); // Toggles the "show" class
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
