@@ -15,10 +15,6 @@ const Navbar = () => {
   const location = useLocation();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-    
-  };
   const closeDropdown = () => {
     setIsDropdownOpen(false);
   };
@@ -27,6 +23,11 @@ const Navbar = () => {
     const navbar = document.getElementById("navbarCollapse");
     navbar.classList.toggle("show"); // Toggles the "show" class
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  
+  const toggleDropdown = () => {
+   
+    setIsDropdownOpen(!isDropdownOpen);
   };
 
   useEffect(() => {
@@ -82,7 +83,10 @@ const Navbar = () => {
                 <NavLink
                   to={NavPath.ProductRoute}
                   className="nav-link dropdown-toggle"
-                  onClick={toggleDropdown}
+                  onClick={() => {
+                    toggleDropdown()
+                    scrollToTop()
+                  }}
                 >
                   Product
                 </NavLink>
@@ -101,7 +105,10 @@ const Navbar = () => {
                         key={index}
                         to={NavPath.ProducDetailtRoute(item.path)} // Using ProductDetailRoute method to generate dynamic route
                         className="dropdown-item"
-                        onClick={toggleDropdown} // Close dropdown when an item is clicked
+                        onClick={() => {
+                          toggleDropdown()
+                          scrollToTop()
+                        }} // Close dropdown when an item is clicked
                       >
                         {item.name}
                       </NavLink>
