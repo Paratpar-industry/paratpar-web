@@ -8,7 +8,7 @@ const Carousel = ({ images }) => {
       id="header-carousel"
       className="carousel slide carousel-fade"
       data-bs-ride="carousel"
-      data-bs-interval="2000"
+      data-bs-interval="3000"
       style={{ marginBottom: "30px" }}
     >
       <div className="carousel-inner">
@@ -23,7 +23,7 @@ const Carousel = ({ images }) => {
               alt={""}
               style={{ height: "600px" }}
             />
-            <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <div className="carousel-caption1 d-flex flex-column align-items-center justify-content-center">
               <div className="p-3" style={{ maxWidth: 900 }}>
                 <h5 className="text-white text-uppercase mb-3 animated slideInDown">
                   {image?.tag}
